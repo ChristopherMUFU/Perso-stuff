@@ -1,0 +1,81 @@
+.values {
+  background-image: url("../../images/DF5_inside.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  margin-top: 4em;
+  border-bottom: 3px solid white;
+}
+
+.values_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  padding: 5%;
+  background-color: #87b37a;
+  border: 4px solid ghostwhite;
+}
+
+.values_title {
+  font-family: "Playbill", sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;
+}
+
+.values_text {
+  /* color: #90d9f1 !important; */
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px,
+    #000000 1px -1px;
+}
+
+.values_text span {
+  font-weight: bold;
+  font-family: "Roboto" !important;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.values__link-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+.values__button {
+  display: block;
+  margin: auto;
+}
+
+.command_button {
+  margin-top: -2em;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .values_text {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 390px) {
+  .values__button {
+    display: block;
+    margin: auto;
+    font-size: small;
+    width: 60%;
+  }
+}

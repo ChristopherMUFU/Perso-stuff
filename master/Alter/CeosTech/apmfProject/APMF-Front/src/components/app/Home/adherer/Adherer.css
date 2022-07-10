@@ -1,0 +1,150 @@
+#adherer {
+    margin-top: 2rem;
+    padding-left: 70px;
+    padding-right: 40px;
+}
+
+
+/* Style first paragraph */
+.paragraph_one{
+    padding: 0 150px 0 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.paragraph_one_title svg{
+    max-width: 100%;
+}
+.svg_line {
+    padding-left: 0;
+    margin-left: 0;
+}
+.paragraph_one h4 {
+    text-align: justify;
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+/* style second paragraph */
+.paragraph_two{
+    position: absolute;
+    padding: auto;
+    margin-top: 7%; 
+}
+
+.paragraph_two p {
+    background-color: var(--secondary-color-light)!important;
+    color: white;
+    width: 300px;
+    height: 90px;
+    margin: 20px auto;
+    text-align: left;
+    padding: 5% 15%;
+}
+.ImgGirl {
+    max-width: 80%
+}
+
+/* style of the button Adhérer */
+.btnAd {
+    padding: 10px 60px;
+    font-size: 26px;
+    display: inline-block;
+    border-radius: 60px!important;
+    background-color: #90268E;
+    color: white;
+    border: solid 0px;
+}
+.btnAd:hover {
+    background-color: #8E5A76;
+}
+
+/* bolder all text */
+.paragraph_one p {
+    font-weight: bolder;
+}
+.paragraph_one h4 {
+    font-weight: bolder;
+}
+.paragraph_one h5 {
+    font-weight: bolder;
+}
+
+/* Mobile version */
+
+/* First paragraph mobile version */
+.paragraph_one_mobile {
+    padding: 130px 40px 0px 40px;
+}
+
+/* bolder all text */
+.paragraph_one_mobile p {
+    font-weight: bolder;
+}
+.paragraph_one_mobile h4 {
+    font-weight: bolder;
+}
+.paragraph_one_mobile h5 {
+    font-weight: bolder;
+}
+.paragraph_two_mobile{
+    position: absolute;
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    margin-top: -170px;
+    padding: 20px;
+    /*padding-left: 25%;*/
+}
+
+.paragraph_two_mobile p {
+    background-color: var(--secondary-color-light)!important;
+    color: white;
+    width: 60%;
+    height: 30%;
+    margin-top: 20px;
+    text-align: left;
+    padding: 2% 5%;
+    font-size: 12px;
+}
+
+
+
+@media(max-width: 1100px) {
+    #adherer {
+        margin-top: 6rem;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .ImgGirl_mobile {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .paragraph_two_mobile{
+        margin-top: -230px;
+        margin-left: 80px;
+        padding: 0px;
+        /*padding-left: 25%;*/
+    }
+    .paragraph_two_mobile p {
+        width: 80%;
+        padding: 5% 5%;
+        opacity: 0.95;
+        font-weight: bold;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .svg_line {
+        display:none;
+    }
+   
+    .btnAd {
+        padding: 10px 50px;
+        margin-left: 40px;
+    }
+    
+}

@@ -1,0 +1,86 @@
+/* Position component InfoTwo 2% form left and right */
+.infoTwo {
+    padding: 0 1%;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+
+}
+
+/* Set background color and radius for the panel */
+.asso__card-panel {
+    background-color: var(--secondary-color-light)!important;
+    border-radius: 20px!important;
+    padding: 1em;
+    margin-bottom: 0.5rem;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Grid display */
+.infoTwo__container {
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+/* Resize image Icon (Heart, Book, ...) to 50% for width and margin 30px for the bottom */
+.imgIcone img{
+    width: 75%;
+    margin-bottom: 13px;
+}
+
+/* Margin 10px for the bottom to line up */
+.asso__cardFooter {
+    margin-bottom: 10px;
+}
+
+.asso__card-title {
+    text-align: center;
+    font-size: var(--subtitle-font-size);
+}
+
+.asso__card-body {
+    margin-bottom: 2rem;
+}
+.btnPlus {
+    border-radius: 20px !important;
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid 0px;
+    font-size: var(--subtitle-font-size);
+}
+
+
+@media screen and (max-width: 750px) {
+    .asso__card-body {
+        font-size: 12px;
+    }
+    .infoTwo__container {
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media only screen and (max-width: 1024px) and (min-width: 750px) {
+    .asso__card-body {
+        font-size: 12px;
+    }
+    .imgIcone img {
+        width: 74%;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+    .infoTwo__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

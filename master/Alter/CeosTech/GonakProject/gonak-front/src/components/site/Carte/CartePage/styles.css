@@ -1,0 +1,64 @@
+#menu-page {
+    display: contents;
+}
+
+/* style for modal */
+.carte-modal-box {
+    border-bottom: solid 1px lightgrey;
+    margin-bottom: 20px;
+}
+
+/* style input form */
+#menu-page .MuiInputBase-fullWidth {
+    height: 50px;
+}
+
+.boisson_choice_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boisson_choice_container p, .boisson_choice_container span {
+    margin-top: 5px;
+    margin-bottom: -10px;
+}
+.boisson_choice_container span {
+    font-weight: bold;
+    margin-left: 0px;
+}
+
+.card__item__total__price{
+    margin-top: 50% !important;
+    margin-bottom: 0;
+    justify-content: space-between !important;
+}
+
+/* style for quantite produit */
+.produit-quantite .MuiSvgIcon-root{
+    color: white;
+}
+
+/* style for button add panier */
+.add-panier {
+    background-color: var(--secondary-color);
+}
+
+/* style for "Produit non disponible" */
+.produit-non-dispo {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* style for add produit item */
+.btn-add-produit .MuiButton-label{
+    color: white;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.error {
+    font-weight: bold;
+    color: red;
+}

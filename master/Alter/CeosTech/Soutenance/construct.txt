@@ -1,0 +1,268 @@
+Construction de la Soutenance :
+
+	1) Remerciments => tuteur pédagogique / maitre d'apprentissage
+	
+	2) Sommaire de la soutenance
+	
+	3) Partie entreprise
+		a) CeosTech
+			- La Société
+			- L'Équipe
+			- (???)
+		
+		b) Markus
+			- Objectifs du projet
+			- Raisons du projet
+			- Fonctionnalités de l'application
+			
+	4) Partie missions
+		a) Environnement de travail
+			- L'équipe technique
+			- outils informatiques et de prog (Android Studio/ Atom/ Builder)
+			- manière de travailler (distanciel)
+			- journée type
+			
+		b) Aspect technique
+			- Remise à niveau du Back-end de l’application par rapport au Front-end
+				* Redéfinition et création de modèle (ex Personnel/ FicheTechnique)
+				* Mise en place des requêtes d'API (GET/ POST/ PUT/ DELETE) => fonction fetch()
+					Dans un premier temps avec seulement Django (GET/ POST/ DELETE) 
+					+++ Explication des Models/Views/Urls de Django
+					Puis utilisation du Django Rest Framework
+					+++ Explication des Models/Serializers/Views/Urls de Django
+					+++ Explication des Models en Nids
+			- Correction de la structure du front (nouvelle page/ navigation)
+			
+		c) Mes difficultés
+			Construction du back dans un premier temps assez peu lisible
+			Front => props + flatlist + navigation
+			flatlist => faire naviguer une donnée d'un composant à un autre
+			Code du front hétérogène 
+			Emulateur et utilisation du react native cli 
+	
+
+
+	
+	Les raisons du projet Markus
+	Fonctonnalités Markus
+	Où ça en est actuellement 
+	
+	Missions au sein de Markus :
+		première missions 
+		Missions principales
+			Réliés les APIs
+			avant/après Porus
+	
+	Parlé lors de la soutenance de l'intégration basée sur bcp de formation.
+	
+		
+		
+Introduction :
+
+Mon nom est Christopher MUFU, je suis étudiant en DUT Informatique au sein de l'Université Sorbonne Paris Nord et apprenti Développeur Full-Stack au sein de la start up CEOS TECH. À travers ce rapport d'activité en entreprise, je vous détaillerai mon entreprise d'accueil ainsi que le pôle d'activité dont je suis affilié, je préciserai par la suite un des projet vitrine de CEOS TECH au quel j'ai participer, puis après vous avoir décrit au préalable mon environnement de travail, j'entamerai le détail de mes tâches et missions au sein de la société, enfin je fournirai un premier bilan d'expérience avant de finir par une conclusion.
+	
+
+Avant de débuter mon rapport d'alternance, je tenais tout d'abord à remercier les acteurs qui m'ont permis d'aboutir à une prise de poste en tant qu'apprenti. Je remercie dans un premier temps mon entreprise d'accueil CEOS TECH, qui ont eu confiance en mon profil et m'ont donné l'oportunité d'intégrer leur projet. Je remercie également les membres de l'Université Sorbonne Paris Nord et de l'IUT de Villetaneuse qui ont énormément contribué à ma recherche d'alternance ainsi qu'à l'amélioration de mes CVs et lettres de motivation.
+
+J'en profite pour remercier personnellement mes maîtres d'apprentissage Laurent Goulenok et Magaye Lopes de leur attention au contenu de mon intégration et de mes missions au sein de l'entreprise. Je remercie mon tuteur pédagogique Jean-Christophe Dubacq de sa disponiblité et son soutien à l'égard de la rédaction de ce rapport. Je souhaites aussi remercier plus personnellement les stagiaires Raj Porus Hiruthayaraj et Kelton Semedo qui ont su être d'une grande aide pour l'évolution de l'entreprise CEOS TECH et qu'ils m'ont surtout beaucoup appris. 
+
+ à remercier à mon maître
+
+BACK
+Méthode d'API PUT pour Fournisseur
+Méthode d'API GET, POST, PUT, DELETE pour Inventaire 
+Méthode d'API GET, POST, PUT, DELETE pour Registre du Personnel
+Méthode d'API GET, POST, PUT, DELETE pour Fiche Technique
+Méthode d'API GET, PUT pour Mon Compte
+Méthode d'API GET pour les Lettres types et Contrats de Travail
+
+
+FRONT
+Fonctionnalité du calcul du prix total d'un produit
+Agencement des pages de navigations pour Fournisseur et Inventaire
+Design des listes et détails du Registre du Personnel
+Design des pages de détail dans Fiche Technique
+
+
+
+Annexe visuelle de l'application 1
++ graphe du business plan
+
+
+
+(def flatlist + props)
+Le code est ainsi très hétérogène, il comporte peu de commentaire 
+
+ le code + react native
+
++++ Essayer de conciliée ce qui a été réaliser dans le back de ce qui a été réaliser dans le front
+- réadaptation des types variables du front
+- refonctionnement des pages (détail)
+- rechangement back pour des soucis de practicité
+
+
+
++++ Exemple d'image d'un modèle, d'une vue et d'une url (à l'ancienne)
+
+Disposition des missions :
+=> Inventaire (Django)
+=> DRF (Porus)
+=> Personnel, Inventaire, Fournisseur
+=> Fichetechnique 
+
+
+=> MonCompte
++++ Explication des Models/Serializers/Views/Urls de Django
++++ Explication des Models en Nids
+
+
+
+STOCK => RH + opti STOCK + Fichetechnique + lettre type/ contrat   =>  COMPTE + filtre
+
+La difficulté ré
+
+
+FIN => remercier les stagiaire ayant participé au projet
+
+---------------------------------------------------------------------------------------------------
+
+=> construct Soutenance :
+	- Présentation entreprise
+		Équipe et contexte de travail
+	- Présentation projet
+	- mes missions au sein du projet
+		Dev FullStack => ma mission
+		Mes outils => React Native / DRF
+		Ce que j'ai réalisé
+	- Bilan
+	
+
+- Présentation entreprise :
+
+Spécialisée dans la conception, l’édition, le développement et l’exploitation de logiciels informatiques.
+Services en matière de contenu rédactionnels, graphiques, photographiques, audiovisuels ou illustratifs.
+
+
+- Présentation Markus :
+
+Logiciel SAAS prenant la forme d’application native
+Destinée aux professionnels de la restauration
+Pilotage de l’activité des restaurateurs au quotidien, surveillance des KPIs et prévisions du chiffre d’affaire en temps réel.
+
+
+
+- Bilan d'expérience :
+
+Ce que je retiens de cette première expérience en entreprise, c'est tout d'abord ma réelle progression en terme d'autonomie. Ayant rejoint le projet MARKUS sans aucun supérieur hiéarchque dans mon pôle d'activité, il m'a fallu par moi-même comprendre le fonctionnement du front-end et du back-end de l'aplication. Cela se résume en des recherches sur la documentation de chaque technologie afin de comprendre les implémentations qui me posais problème, le visonnage également de vidéo d'explication pour avoir un point de vue plus concret du fonctionnement de chaque fonctionnalitée. J'ai pu notamment beaucoup apprendre des différents stagiaires qui sont intervenus au sein du projet, que ce soit en terme de outils et de logiciel a utilisé ou bien en terme de programmation pure, cela fut également une source d'apprentissage pour moi.
+Cette première expérience m'a permis aussi d'approfondir mes compétences en gestion de projet. Le fait d'être en capacité de définir une demande en une tâche informatique, d'essayer de respecter au mieux la deadline malgré les demandes qui s'accumulent et surtout la capacité de se répartir les tâches selon les compétences de chacun sont pour moi l'ensemble des compétences que j'ai pu développer et stimuler à travers le projet MARKUS.
+J'ai pu remarquer en outre une progression en ma capacité de vulgarisation et de synthèse de mes tâches informatiques, une capacité que je stimule lors de l'ensemble de mes réunions et que je serais à l'avenir amener à améliorer grâce au prisme des formations aux technologies de l'application MARKUS dont je serais en charge de présenter à l'arrivée de chaque nouveau stagiaire.
+Et par dessus tout, cette première expérience ma conforté dans l'idée d'orienter ma future carrière professionnel dans vers le secteur de la Data et du back-end. Tout le long de mes missions et tâches au sein du projet MARKUS j'ai eu cette attrait à développer le back-end de l'application, j'en ai également beaucoup appris en terme de transmission, de récupération et de sécuristion des données. Ainsi continuer ma carrière pour parvenir au poste de Data Scientist et de pourquoi pas le réaliser au sein de la société CEOS TECH, est désormais pour moi un réel objectif.
+
+Pour conclure, je suis extrêment satisfait de l'accueil proposé par CEOS TECH, malgré cette montée en compétence assez soudaine auquelle nous avons pu être confronter dès le commancement, les membres CEOS TECH sont toujours rester à notre écoute et nous ont laissé le temps nécessaire pour nous aclimater à ce nouvel environnement via notament l'organisation de nombreuses formations pour parfaire nos compétences nouvellement acquises. Nous avons eu le droit aussi de participer à des évènements de team building, ce qui nous a permis de voir une première fois l'ensemble de l'équipe et d'également faire naître une cooésion de groupe au sein de l'entreprise. Je suis donc enthousiaste de contribuer à la naissance d'une jeune société et j'ai hâte de pouvoir surmonter les nouveaux défis qui nous attendent.
+
+Remise à niveau du Back-end de l’application par rapport au Front-end
+=> contexte + models + implémenter les requêtes autorisées + configuration des urls d'affichage
++ en place des requête dans la partie front-end
+=> travailler le role du Controleur dans la structure MVC
+Création et gestion des requêtes d’APIs 
+
+Mise en place des nouvelles fonctionnalités
+
+
+
+
+
+
+
+
+Plan Soutenance :
+
+
+Introduction
+
+Ceos Tech est une société de moins d'un ans ayant deux domaine de spécialisation,
+tout d'abord la conception, l’édition ainsi que le développement et l’exploitation de logiciels informatiques, (sites et appli)
+services en matière de contenu rédactionnels, graphiques, photographiques,
+audiovisuels ou illustratifs, (formation rédaction de business plan, formation de conception de design figma, formation no-code) prochainement formation coding.
+
+Au niveau de l'organigramme de l'entreprise, celle-ci est organiser en deux pôle avec le pôle commerciale chargée en partie de la communication au sein de Ceos et de ces formations, puis nous avons le pôle technique dont je fais partie chargé au déveleppoment des applications de Ceos Tech au prochainement d'entreprise cliente. Nous avons ainsi Laurent Goulenok et Magaye Lopes qui supervise ces deux pôles.
+
+
+Partie 1
+
+
+Cette idée de projet d'application est venu de Laurent Goulenok qui exercé pendant de
+nombreuses années les métiers de chef cuisinier plusieurs structures de restauration (Hôtel restaurant, brasserie, restauration rapide), il a ainsi se rendre compte de la difficulté des restaurateurs à prévoir les quantités ou denrées à sortir pour chacun de leur service.
+
+Edalement la présence des ratios concernant le ticket et le panier moyen qui permettent d’identifier la dépense moyenne de chaque client qui fréquentent l’établissement alimentaire selon plusieurs paramètres comme la tranche horaire, la date, le mode decommercialisation et des produits retrouvés dans le ticket.
+
+
+
+CHOSE À METTRE :
+
+- signe euro après affichage de la donnée
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Indexes :
+
+
+logiciel SAAS : Un logiciel SAAS (software as a service) veut signifier un logiciel applicatif hébergé et exploité en dehors de l'organisation ou de l'entreprise par un tiers. L'outil est ainsi accessible à la demande via un accès Internet.
+
+Application Native : Une application native veut signifier une application qui a été développé en une fois mais auquel son code a été conçu et converti pour fonctionner sur différents système. Dans notre cas, React Native nous permet de développer en une fois un code qui fournira un même rendu sur Android que sur IOS.
+
+KPIs : Un KPI (Key Performance Indicators) est une fonctionnalité concentre tous les indicateurs clés de performance d'une entité précise sous la forme de données et graphiques. Le tableau de bord d'une voiture par exemple est ainsi un regroupement de KPIs
+
+Fiche technique : Une fiche technique est fiche qui détaille la réalisation d'un plat servit en restauration, il s'agit autrement dit d'une recette de cuisine.
+
+front-end : Le front-end concerne la partie d'une application, elle est chargée à la mise en place des éléments graphiques qui permettront à l’utilisateur final de se repérer sur l’interface ainsi qu'à la prendre facilement en mains. Le front va également prendre en compte le développement des interactions, des animations, du responsive design, de l'expérience et de l'interface utilisateur (UX/UI)
+
+back-end : Le back-end concerne l'autre partie d'une application avec le front-end et est porteuse de ça valeur ajoutée. Le back-end est chargée de construire, de développer et de mettre en interaction les éléments essentiels au fonctionnement de l’application comme notamment la base de données et le serveur d'hébergement.
+
+API : Une API (Application Programming Interface) est un moyen informatique qui permet à des applications de communiquer entre elles et de s'échanger mutuellement des services ou des données.
+
+requête API : Une requête d'API est une methode servant l'échange de données entre les applications, il en existe de plusieurs sortes comme le GET et le POST étant les plus connus.
+
+IDE : Un IDE (Integrated Development Environment) est logiciel qui regroupe un ensemble d’outils de développements dédiés aux programmeurs afin qu’ils puissent optimiser leur temps de travail et améliorer leur productivité. Autrement dit, l’IDE facilite la mise en œuvre de projets tels que le développement de logiciels ou d’applications.
+
+CLI : un CLI est une interface homme-machine dans laquelle la communication entre l'utilisateur et l'ordinateur s'effectue en mode texte via donc l'utilistion de différentes commandes.
+
+
+
+
+--------------------------------------------------------------------------------------------------
+
+
+Brouillon :
+
+
+Infos CEOS TECH :
+La Société a pour objet, directement ou indirectement en France et en tous pays : 
+-        La conception, l’édition, le développement et l’exploitation de logiciels informatiques, de sites internet et d’applications mobiles, dans tous domaines d'activités ;
+-        La réalisation de prestations de services, dans tous domaines d'activités ;
+-        La conception, le développement, l’édition, l’exploitation de logiciels, d’applications multimédias ainsi que plus généralement de tous développements à caractère informatique et/ou multimédia, sur tout support connu ou inconnu à ce jour et dans tous domaines d’activités ;
+-        La conception, l’édition, la production, l’exploitation, la distribution, la commercialisation et la diffusion, sur tout support connu ou inconnu à ce jour, de contenus notamment rédactionnels, graphiques, photographiques, audiovisuels, multimédias ou illustratifs ;
+-        L’achat et la vente d’espaces publicitaires ;
+-        L'activité de collecte, de traitement, d'exploitation et de commercialisation de données
+-        La négociation de licences et plus généralement de tout droit de propriété intellectuelle 
+-        La prise, l'acquisition, l'exploitation ou la cession de toutes marques, de tous procédés et brevets, et plus largement de tout droit de propriété intellectuelle concernant ces activités 
+-        La participation de la Société, par tous moyens, directement ou indirectement, à toutes opérations pouvant se rattacher à son objet par voie de création de Sociétés nouvelles, d'apport, de souscription ou d'achat de titres ou droits sociaux, de fusion ou autrement, de création, d'acquisition, de location, de prise en location-gérance de tous fonds de commerce ou établissements 
+-        Et plus généralement, toutes opérations de quelque nature qu’elles soient, mobilières ou immobilières, commerciales, financières ou industrielles pouvant se rattacher directement ou indirectement à l’objet social et à tous objets similaires, connexes ou complémentaires, de nature à favoriser son extension ou son développement.
+

@@ -1,0 +1,82 @@
+
+.cardContainer__news-homepage {
+    display: flex;
+    flex-direction: column;
+}
+.card__new-homepage {
+    max-width: 500px;
+    max-height: 600px;
+
+}
+
+.cardImg {
+    max-width: 100%;
+    height: 20% auto;
+    max-height: 200px;
+}
+
+/* Style of the title of card */
+.cardTitle__news-homepage {
+    color: #90268E;
+    text-transform: uppercase;
+    text-align: left;    
+    font-size: var(--subtitle-font-size) !important; 
+    font-weight: 300;
+}
+
+.cardDate__news-homepage {
+    text-align: left;  
+    font-size: var(--font-size) !important;
+    font-weight: 300;
+}
+
+/* We set a maximum of three lines on the text */
+.cardText__news-homepage {   
+    --max-lines: 3;
+    max-height: calc(var(--lh) * var(--max-lines));
+    overflow: hidden;
+    position: relative;
+    padding-right: 2em; 
+    margin-top: 1.5em;
+    text-align: left;  
+    font-size: var(--font-size) !important;
+    font-weight: 300;
+}
+
+/*The ellipsis after the text is truncated */
+.cardText__news-homepage::before {
+    content: "(...)";
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    z-index: 100;
+}
+
+/* The white background to cover the text where the ellipsis appears */
+.cardText__news-homepage::after {
+    --max-lines: calc(3 - 1);
+    content: '';
+    position: absolute;
+    top: calc(var(--lh) * var(--max-lines));
+    right: 0;
+    width: 2em;
+    height: 1.5em;
+    background: white;
+}
+
+.cardFooter__news-homepage {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btnPlus { 
+    border-radius: 20px !important;
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid 0px;
+    font-size: var(--subtitle-font-size);
+}
+.btnPlus:hover {
+    background-color: #90268E;
+}

@@ -1,0 +1,149 @@
+
+.team{  
+  background-image: url("../../images/background-logo.svg");   
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 3rem;
+}
+
+.team_header{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 4rem;
+
+}
+
+.team__introduction{
+  max-width: 1000px;
+}
+
+.team_title {
+  font-family: 'Joti One', cursive;
+  font-size: 4rem;  
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo__team-page {      
+  width: 188px;
+  height: 167px;
+}
+
+.team__drawing{
+  align-items: center;
+  margin: 0 7rem;
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+  border: 2px solid #F7D452;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team__bitmoji {
+  margin-top: -23em;
+  margin-left: 5em;
+  position: absolute;
+  
+}
+
+.team__bitmoji2 {
+  margin-top: -23em;
+  margin-left: 41em;
+  position: absolute;
+  
+}
+.team__bitmoji3 {
+  margin-top: -23em;
+  margin-left: 78em;
+  position: absolute;
+  
+}
+
+.team_text{
+    /* color: #90d9f1 !important; */    
+    font-size: 2rem;
+    color:black;
+    text-align: center;
+}
+
+.team_text span{
+  font-weight: bold;
+}
+
+  .team__description{
+    /* color: #90d9f1 !important; */
+    font-size: 1.5rem !important;
+    color:black;
+  }
+
+  .team_figure {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+
+  }
+
+  .team__top-row,.team__bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .personnel__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
+  }
+
+  .personnel__container h2 {
+    font-family: 'Joti One', cursive;    
+    font-size: 2.5rem;  
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+
+@media screen and (max-width: 1500px) {
+  .team__drawing {
+    margin: 2rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .team__drawing {
+    margin: 0rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .team__top-row,.team__bottom-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo__team-page {
+    display: none;
+  }
+
+  .team_title {
+    font-size: 3rem;
+  }
+
+  .personnel__container h2 {
+    font-size: 2rem;  
+  }
+
+  .team_text {
+    font-size: 1.5rem !important;
+  }
+
+}
+

@@ -1,0 +1,185 @@
+#panier {
+  background-color: var(--secondary-color-light);
+  margin-top: 120px;
+  padding-bottom: 5em;
+}
+
+/* Style for titre of panier */
+#panier h1 {
+  font-family: var(--font-family-titre);
+  font-size: var(--font-size-titre);
+  text-align: center;
+  padding-top: 1em;
+  color: white;
+}
+
+.panier__vide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.panier__vide img {
+  max-width: 80%;
+  object-fit: contain;
+}
+
+.panier__vide h2,
+.panier__container h2 {
+  text-align: center;
+  margin: 2rem 0;
+  font-weight: 450;
+  font-size: 2rem;
+}
+
+.panier__container {
+  border: 1px solid rgb(77, 76, 76);
+  padding: 4rem 7rem;
+  box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin: 4em 6vw 5em 6vw;
+  background-color: white;
+}
+
+.panier__nombre-articles {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.panier__container--prix {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.panier__container--prix h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.panier__container--prix p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+
+.panier__container--btn-valider {
+  text-align: center !important;
+  background: rgb(77, 76, 76) !important;
+  margin: auto !important;
+  display: block !important;
+}
+
+.panier__choice-delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.choice-delivery__form {
+  margin: 1rem;
+}
+
+.go-back {
+  font-size: 1.5rem;
+  font-weight: 600;
+  /**
+   * If you set it to a value higher than the 'font-size', 
+   * you will have to take account of the difference 
+   * between the 'line-height' and the 'font-size' 
+   * to vertically centre the arrow and align it with the text.
+   **/
+  line-height: 1;
+
+  /* Makes some place for the arrow */
+  padding-left: 15px;
+
+  /* The arrow will be absolutely positioned */
+  position: relative;
+  border: none;
+  position: absolute;
+  top: 7em;
+  left: 2rem;
+  background-color: var(--secondary-color-light);
+}
+
+.go-back::before {
+  color: red;
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 0px;
+  position: absolute;
+  width: 8px;
+
+  /* These two lines vertically centre the point of the arrow */
+  margin-top: -3px;
+  top: 50%;
+
+  /* The arrow sprints to the left when the link is hovered */
+  transition: left 0.1s;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@media (max-width: 850px) {
+  .panier__container {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .panier__container {
+    padding: 4rem 1rem;
+    margin-bottom: -20px;
+  }
+
+  #panier h1 {
+    padding-top: 3em;
+    font-size: var(--font-size-titre-mobile);
+    margin-bottom: -20px
+  }
+}
+
+@media (max-width: 600px) {
+  .panier__vide img {
+    max-width: 180px;
+  }
+
+  .panier__vide h2,
+  .panier__container h2 {
+    font-size: 1.3rem;
+  }
+
+  .panier__container--prix h2 {
+    font-size: 1.3rem;
+  }
+  .panier__container--prix p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 380px) {
+  .panier__container {
+    padding: 4rem 10px;
+  }
+} 
+
+@media screen and (max-width: 960px) {
+  .go-back {
+    top: 7.5rem;
+  }
+
+  #panier {
+    margin-top: 77px;
+}
+}
+
+
+
+

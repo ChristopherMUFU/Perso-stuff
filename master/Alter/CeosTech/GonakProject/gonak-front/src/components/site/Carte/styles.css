@@ -1,0 +1,213 @@
+/* background for menu */
+#carte {
+    background-image: url("../../../images/menu/Fond-Menu.png");
+    background-size: cover;
+    margin-top: 120px;
+    padding-bottom: 73px;
+}
+
+/* style for titre menu */
+#carte h1 {
+    font-family: var(--font-family-titre);
+    text-align: center;
+    color: var(--secondary-color-lighter);
+    font-size: var(--font-size-titre);
+    padding-top: 7%;
+    padding-bottom: 40px;
+}
+
+/* style for partie menu */
+.menu-desktop {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* style Menu in the left */
+.menu-lelf{
+    background-color: var(--third-color);
+    font-size: var(--font-size);
+    list-style: none;
+    padding: 40px;
+    width: 300px;
+}
+.menu-lelf li {
+    padding: 20px;
+}
+
+
+/* Menu Entree */
+.menu-item-entree {
+    width: 80%;
+    background-color: var(--third-color);
+    margin-bottom: 100px;
+    padding-bottom: 30px;
+}
+
+/* style for titre Entree */
+.menu-item-entree h4{
+    color: var(--secondary-color);
+    font-size: 30px;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/* style for text Entree */
+.menu-entree-text {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    border-top: 2px solid var(--secondary-color-dark);
+    padding-top: 20px;
+    color: var(--primary-color);
+}
+
+
+/* style for menu when click on it */
+.menu-click {
+    font-weight: bolder;
+    color: var(--secondary-color);
+}
+
+/* style for menu when not click */
+.menu-not-click {
+    color: var(--primary-color);
+}
+
+/* style for menu item */
+.menu-item {
+    display: block;
+    width: 40%;
+    background-color: var(--third-color);
+    justify-content: center;
+    margin: 20px;
+}
+
+/* style for menu item */
+.menu-item-undispo {
+    display: block;
+    width: 40%;
+    background-color: var(--third-color);
+    justify-content: center;
+    margin: 20px;
+    opacity: 70% !important;
+}
+
+
+
+.menu-item-img {
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+}
+
+.menu-item-img img{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+}
+
+.menu-item-info {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.menu-item-titre{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item .menu-item-titre {
+    font-weight: bolder;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+
+/* Mobile version */
+.menu-item-mobile {
+    width: 90%;
+    background-color: var(--third-color);
+    margin-bottom: 40px;
+}
+
+/*.menu-item-mobile img {
+    width: 100%;
+}*/
+
+.menu-item-mobile .menu-item-titre-mobile {
+    font-weight: bolder;
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+
+.menu-item-info-mobile {
+    padding: 5px 5px 5px 15px;
+}
+
+/* Arrow icon for Menu Side */
+.menu-arrow-back .MuiSvgIcon-root {
+    fill: var(--secondary-color-dark);
+    font-size: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 110px;
+}
+
+.menu-arrow-forward .MuiSvgIcon-root {
+    fill: white;
+    font-size: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-top: 30px;
+}
+
+/* Offcanvas side menu */
+.offcanvas-start{
+    width: 100%;
+    background-color: var(--third-color);
+}
+
+/* Version Mobile */
+@media screen and (max-width: 960px) {
+
+    /* background for menu */
+    #carte {
+        margin-top: 77px;
+    }   
+
+    /* style for titre menu */
+    #carte h1 {
+        padding-top: 0px;
+    }
+
+        /* Style for Menu Page Entree */
+    .menu-item-entree {
+        margin-bottom: 100px;
+        padding-bottom: 30px;
+    }
+
+    /* style for titre Entree */
+    .menu-item-entree h4{
+        font-size: 20px;
+    }
+
+    /* style for text Entree */
+    .menu-entree-text {
+        font-size: var(--font-size-mobile);
+    }
+
+    /* style for menu item */
+    .menu-item {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+     /* style for menu item */
+     .menu-item {
+        width: 80%;
+    }
+}
+

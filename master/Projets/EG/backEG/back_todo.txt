@@ -1,0 +1,44 @@
+Organisation back-end :
+
+- api public => 
+	Profil(
+		nom
+		prenom
+		age
+		localisation
+		description
+		// ++ photo front
+		abonnement[Profils]
+		abonne[Profils]
+		demande_abonne[Profils]
+		groupe[Groupes]
+		eco_groupe(bool)
+	), 
+	Groupe(
+		nom
+		description
+		localisation
+		// ++ photo front
+		admin[Profil] // 1 seule
+		membres[Profils]
+		demande_membre[Profils]
+		
+		// voir view ou serializer perso pour les potentiels ecogroupe
+		eg_demande(bool)
+		eg_adresse
+		num_groupe
+		eg_verifie(bool)
+		eg_posts[Posts] // V1
+		
+	),
+	
+	// V1
+	Post(
+		titre
+		description
+		// img front ??
+	),
+		
+	
+	
+- api privé => User(email/num/password)

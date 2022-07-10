@@ -1,0 +1,36 @@
+#centres-page h2 {
+    font-weight: bold;
+    font-size: var(--subtitle-font-size);
+}
+
+.city {
+    font-size: 30px;
+    padding: 1.8%;
+}
+.centres-page h4 {
+    font-weight: bold;
+    text-align: center;
+}
+.centres-page h5 {
+    font-size: var(--font-size);
+}
+.orga_title {
+    text-align: center;
+    font-weight: bold;
+}
+.orga {
+    padding: 50px;
+}
+.line {
+    border-top: 3px solid black;
+
+}
+.centres_p {
+    
+    text-align: center;
+    white-space: pre-line;
+}
+
+.page-card-PS {
+    margin-top: 1rem;
+}

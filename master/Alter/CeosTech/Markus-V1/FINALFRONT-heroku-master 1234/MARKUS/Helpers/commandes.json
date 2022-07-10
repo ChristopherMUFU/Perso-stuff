@@ -1,0 +1,53 @@
+[
+   {
+      "id" : 1,
+      "fournisseur" : "Pomona",
+      "date" : "20/06/2020",
+      "details" : [
+         {"id" : 0, "name" : "Bière", "prix": 3, "qty": 10},
+         {"id": 1, "name" : "Saucisson", "prix": 5, "qty": 1} 
+      ]
+   },
+   {
+      "id" : 0,
+      "fournisseur" : "Pomona",
+      "date" : "20/04/2020",
+      "details" : [
+         {"id" : 0, "name" : "Bière", "prix": 3, "qty": 10},
+         {"id": 1, "name" : "Saucisson", "prix": 5, "qty": 1} 
+      ]
+   },
+   {
+      "id" : 2,
+      "fournisseur" : "Pomona",
+      "date" : "20/03/2020",
+      "details" : [
+         {"id" : 0, "name" : "Bière", "prix": 3, "qty": 10},
+         {"id": 1, "name" : "Saucisson", "prix": 5, "qty": 1} 
+      ]
+   },
+   {
+      "id" : 3,
+      "fournisseur" : "Pomona",
+      "date" : "20/03/2020",
+      "details" : [
+         {"id" : 0, "name" : "Bière", "prix": 3, "qty": 10},
+         {"id": 1, "name" : "Saucisson", "prix": 5, "qty": 1} 
+      ]
+   },
+   {
+      "id" : 4,
+      "fournisseur" : "Metro",
+      "date" : "21/04/2019",
+      "details" : [{"name" : "Coca", "prix": 3, "qty": 10}, {"name" : "Fromage", "prix": 5, "qty" : 1} ]
+   },
+   {
+      "id" : 5,
+      "fournisseur" : "Metro",
+      "date" : "22/04/2019",
+      "details" : [
+         {"id" : 0, "name" : "Coca", "prix": 3, "qty": 10},
+         {"id": 1, "name" : "Fromage", "prix": 5, "qty": 1} 
+      ]
+   }
+]

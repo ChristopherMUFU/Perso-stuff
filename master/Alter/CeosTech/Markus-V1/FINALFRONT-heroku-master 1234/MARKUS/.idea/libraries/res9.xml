@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="res9">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/node_modules/react-native-html-to-pdf/android/build/intermediates/library_java_res/debug/res.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,294 @@
+Nouvelle structure du rapport :
+
+	Page de remerciements…………………………………………………………………… 1 (update)
+	Sommaire…………………………………………………………………………………… 2
+
+	#Introduction…………………………………………………………………………………. 3
+
+	#Partie 1 : Présentation de CEOS TECH
+		#La Société…………………………………………………………………………………….4
+		#L’Équipe……………………………………………………………………………………....4
+		#Organigramme de l’entreprise……………………………………………………………..4
+
+
+	Partie 2 : Chronologies & présentation des projets (NEW)
+		Chronologies des projets
+		Markus :
+			Objectifs du projet…………………………………………………………………………...6
+			Raisons du projet…………………………………………………………………………....6
+			Fonctionnalités de l’application…………………………………………………………….7
+			
+		Olokoso :
+			Objectifs du projet…………………………………………………………………………...6
+			Raisons du projet…………………………………………………………………………....6
+			Fonctionnalités de l’application…………………………………………………………….7
+		
+		DF5 :
+			Objectifs du projet…………………………………………………………………………...6
+			Raisons du projet…………………………………………………………………………....6
+			Fonctionnalités de l’application…………………………………………………………….7
+
+
+	Partie 3 : Environnement de travail
+		Disposition de l’équipe et outils de travail………………………………………………...8 (update)
+		Contexte de travail et journée type………………………………………………………..8
+
+
+	Partie 4 : Missions et tâches (NEW) +++ image des projs
+		Mon poste et mes missions……………………………………………………………….10 (update)
+		A) Markus :
+			Première tâche majeur…………………………………………………………………….10 (front)
+			Deuxième tâche majeur…………………………………………………………………...14 (front)
+			Troisième tâche majeur…………………………………………………………………...15 (front)
+
+
+
+
+
+
+
+
+
+++++ Récap circulaire à la fin de chaque mission
+
+
+		B) Olokoso :
+			Finalisation du Back-end 
+				=> Classe Produit, remplissage des données (image static)
+			Adaptation du Paiement / Commande 
+			    => récupération des infos de la commande du client
+			    	remanier la récup
+				=> notion de reducer (Rédux), 
+				=> sytème de paiement Stripe (détail)
+			Finalisation du design et des fonctionnalité Dashboard 
+				=> Login de la partie dashboard (détail)
+				=> (commande=>get, suivi=>post, dispo=>get, contact=>get)
+					(détail + ajout)
+
+Cette valeur numérique est le nombre de millisecondes écoulées depuis le premier janvier 1970 à minuit
+d'après le temps universel
+
+	
+JWTAuthentication		
+	rest_framework_simplejwt	
+Projet O’Lokoso :
+
+État du projet et missions attribuées :
+
+Nous avons débuté le projet sur la base établi d'un ancien stagiaire qui avait traité le  cas d'un site internet pour un restaurant virtuel. Au niveau du front-end, les fonctionnalités liées à la partie client et administrateur du site internet étaient quasiment toutes initialisées. Côté back-end l'ensemble des tables essentielles au projet avait été construites sur une base de données MySQL n'utilisant pas Django REST Framework.
+
+Ainsi en partant de cette base de code ma ligne directrice au sein de ce projet fut l'optimisation et la finalisation de la partie back-end ainsi que la finalisation des fonctionnalités et du design de la partie administrateur du site internet O'Lokoso.
+
+Cette mission principale s'est organisée autour de trois tâches majeures, la première consiste en la finalisation du back-end du site O'Lokoso sous Django Rest Framework afin de pouvoir par la suite remplir l'ensemble des données de la carte du restaurant.
+
+
+Première tâche majeure :
+
+Pour réaliser cette première tâche, il a fallu dans un premier temps repérer les éléments à garder, à modifier ou à enlever au sein de la production de l'ancien stagiaire côté bacK-end. En effet, vu que ce back-end a été réalisé à l'origine pour un autre restaurant, nous aurons forcément des tables ou requêtes d'API à enveler ou modifier. Après avoir effecttué les modifications nécessaires au projet O'Lokoso, je me suis concentré sur les tables allant servir à l'affichage des produits de la carte du restaurant. Étant en coopération lors de ce projet avec la stagiaire Anne Bequet ayant une apétence significative au niveau du front-end et de la technologie ReactJS, nous nous sommes donc mis d'accord sur les différentes tables et champs à initialisées.
+Ainsi pour la partie impliquant la carte du restaurant nous avons utilisé deux table, une première qui servira à la définition d'une catégorie de produit (entrée, plats, desserts, etc) et une seconde nécessaire à la définition d'un produit. La table catégorie est composée de deux champs outre sa clé, on retrouve le nom de la catégorie de produit ainsi que sa description. 
+Pour la table produit nous avons défini trois catégorisation de champs. Nous avons les champs communs pour l'ensemble des produits du restaurant, cela englobe le nom du produit et sa description, la catégorie du produit qui est une clé étrangère faisant référence à la table produit, l'image du produit et son prix ainsi que sa disponibilité étant un booléen (vrai ou faux).
+Nous avons ensuite les champs spécifiques constitués des booléens suivant, sur le grill, au menu, accompagnement, supplement. L'ensemble de ces champs permettent d'indiquer la caractéristion du produit, par exemble un produit ayant la valeur "true" sur le champ "supplement" veut signifier que le produit en question se caractérise comme un supplément, il s'agit donc d'un produit particulier.
+Et nous avons enfin un champs spécifique aux suppléments qui n'est plus d'autre que le prix du suppléments à entrer seulement si le produit en question est un supplement.
+Après initialisation des tables sous Django Rest Framework, il nous fallait remplir les données de la carte, pour cela nous devions tout d'abord déployer le notre back-end sur un serveur distant. Nous avons utilisé à cet effet la plateforme Heroku permettant notamment le déploiement de sites internet développés en langage python. Pour mettre en oeuvre le déploiement, une des solutions est de créer un répertoire Github qui sera liée à notre projet Heroku, il faudra rajouter à ce repertoire quelques dépendances et fichier de configuration suplémentaire tel que le fichier requirements.txt ou le fichier Procfile afin de parfaire le déroulement du déploiement. Par la suite à l'aide du CLI(trad) de Heroku nous organisons le déploiement du répertoire Github que nous avons crée vers le répertoire Github de la production déployée, générée par la plateforme Heroku. Une fois que le déploiement bien réalisé, Heroku nous fourni l'url de production de notre projet et ainsi grâce à Django Rest Framework, il nous sera possible selon l'autorisation imposé de remplir nos tables initialisés par les données du restaurant O'Lokoso, élément ayant consistué la dernière étape de ma tâche majeure. 
+
+Après remplissage de l'ensemble des produits de la cartes,il nous fallait réadapter 
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	!!!! => Changement au niveau de la structure (3 en 2 et proj + mission)	
+		
+		C) DF5
+			Modification de la partie cliente
+				=> zone de livraison, nouvelle carte + produit
+			Modification de la partie administrateur
+				Implémentation dashboard markus
+				=> dispo livraison
+				
+			Maintenance / Ajustement / Formation
+				=> Implémentation design markus DF5 puis Olokoso 
+				=> Correction orthographe, optimization de code carte DF5
+				=> formation des nouveaux stagiaire sur le projet (Back, APIs)
+				
+				=> participation projet poctuelle (dima-délice / APMF / Gonak)
+				
+			
+		_l_l_l_l,l_l_l
+
+
+	Partie 5 : Bilan d’expérience……………………………………………………………...18 (update)
+		=> panel entier du metier de dev
+		=> vision des différentes branches du métier
+
+	Conclusion………………………………………………………………………………….19
+
+	Indexes……………………………………………………………………………………...20
+	
+	
+	
+Le site internet O’Lokoso,
+
+page OnePage => caroussel /
+page Carte =>
+page Galerie =>
+
+
+!!!! => Changement au niveau de la structure (3 en 2 et proj + mission)
+
+
+
+
+
+
+
+
+
+
+
+class Main extends React.Component {
+ constructor(props) {
+    super(props);
+    this.state = { windowWidth: window.innerWidth };
+  }
+
+ const handleResize = (e) => {
+  this.setState({ windowWidth: window.innerWidth });
+ };
+
+ componentDidMount() {
+  window.addEventListener("resize", this.handleResize);
+ }
+
+ componentWillUnMount() {
+  window.addEventListener("resize", this.handleResize);
+ } 
+
+  render() {
+    const { windowWidth } = this.state; 
+    return <div>Current window width: {windowWidth}</div>
+  }
+}
+
+
+<div className="hero__container">
+      <Carousel pause={false}>
+        {MenuContent.map((content) => (
+          <Carousel.Item interval={5000} className="px-5" key={data.alt}>
+            <div className="hero__hero">
+              <div className="hero__hero-hadings">
+                <p className="hero__entete">{data.en_tete}</p>
+                <p className="hero__subtext">{data.sous_texte}</p>
+                {data.texte}
+
+                <Link to={data.lien.route} className="telecharger_btn">
+                  {data.lien.nom}
+                </Link>
+              </div>
+              <div className="hero__hero-image">
+                {data.images.map((image) => (
+                  <img
+                    key={image.nom}
+                    className={`hero__image ${image.alt}`}
+                    src={image.nom}
+                    alt={image.alt}
+                  />
+                ))}
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
+    
+    
+    
+    
+    
+boissonSelected: "Coca-cola Cherry"
+categorie: 3
+garnitureSelected: []
+id: 12
+image: "https://df5site.herokuapp.com/static/images/Tacos_small_size_.png"
+information: "test"
+nom: "Tacos 1 viande"
+nomCategorie: "Menu Sandwich"
+painSelected: null
+prix: 7
+prixTotal: 7.5
+quantite: 1
+sauceSelected: ["Mayonnaise"]
+supplementSelected: ["{\"nom_supplement\":\"Cheddar\",\"prix_supplement\":0.5}"]
+viande_1_selected: "Nuggets"
+viande_2_selected: []
+viande_3_selected: []
+
+
+
+[
+    {
+        "id": 95,
+        "panier": {
+            "id": 115,
+            "infos_menus": "[]",
+            "produits": [
+                boissonSelected: "Coca-cola Cherry"
+				categorie: 3
+				garnitureSelected: []
+				id: 12
+				image: "https://df5site.herokuapp.com/static/images/Tacos_small_size_.png"
+				information: "test"
+				nom: "Tacos 1 viande"
+				nomCategorie: "Menu Sandwich"
+				painSelected: null
+				prix: 7
+				prixTotal: 7.5
+				quantite: 1
+				sauceSelected: ["Mayonnaise"]
+				supplementSelected: ["{\"nom_supplement\":\"Cheddar\",\"prix_supplement\":0.5}"]
+				viande_1_selected: "Nuggets"
+				viande_2_selected: []
+				viande_3_selected: []
+            ]
+        },
+        "client": {
+            "id": 95,
+            "nom": "Goulenok",
+            "prenom": "Laurent",
+            "email": "laurentgoulenok@gmail.com",
+            "telephone": "0615244088",
+            "adresse": "18 rue de l'Armorique",
+            "ville": "Montigny le Bretonneux",
+            "code_postale": "78180",
+            "montant": 8.9
+        },
+        "date_commande": "2021-07-25T14:34:49.798389Z",
+        "commentaire": "",
+        "methode_vente": "à emporter",
+        "prix_totale": 8.9,
+        "est_vue": true,
+        "est_livre": false,
+        "reference": "7WFMZ"
+    },
+]
+
+	
+	
+	
+

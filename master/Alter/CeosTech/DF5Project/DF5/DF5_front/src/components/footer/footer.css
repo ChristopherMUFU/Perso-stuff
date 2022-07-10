@@ -1,0 +1,166 @@
+.footer__container {
+  background: url("../../images/bois_clair_carré.png");
+  color: #3d3d3d;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+}
+
+.footer__title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  font-family: "Roboto";
+  -webkit-text-stroke: 0.7px black;
+  margin-right: 1rem;
+}
+
+.footer__adress {
+  font-weight: 00;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+.olokosso__siret {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+}
+
+.footer__logo {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.footer__part1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+.footer__part2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__part3 {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.footer__part2 p {
+  font-weight: 300;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  font-family: "Roboto";
+  -webkit-text-stroke: 0.2px black;
+}
+
+.footer__part2 p span {
+  font-weight: 500;
+  font-family: "Roboto";
+  -webkit-text-stroke: 0.3px black;
+}
+
+.footer__social-medias {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__logo-social-medias {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin: 1rem;
+}
+
+.footer__mobile {
+  display: none;
+}
+
+.footer__link-administrative {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer__link-administrative a {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.footer__link-administrative a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 860px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer__desktop {
+    display: none;
+  }
+
+  .footer__part1 {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .footer__part3 {
+    align-self: center;
+    margin-right: 0;
+    justify-self: center;
+  }
+
+  .footer__olokoso-adress {
+    margin-bottom: 1rem;
+  }
+
+  .footer__logo {
+    width: 160px;
+    height: 140px;
+  }
+  .footer__title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    font-family: "Roboto";
+    -webkit-text-stroke: 0.7px black;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer__adress {
+    font-weight: 00;
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+    width: 100%;
+  }
+}

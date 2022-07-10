@@ -1,0 +1,172 @@
+.page__children-container {
+    width: 100%;
+    padding: 0 5rem;
+}
+.submenu__container {
+    margin-top: 6em;
+}
+
+/* Make header bolder */
+.page__children-container h3{
+    padding-bottom: 3em;
+    font-weight: bolder;
+    text-align: left;
+    font-size: var(--subtitle-font-size);
+}
+
+/* Make sub header bolder */
+.page__children-container h5{
+    font-weight: bolder;
+    text-align: left;
+    padding: 10px 0px;
+}
+
+
+
+/* changer style list with disc before <li> */
+.page__children-container ul:not(.browser-default) > li {
+    padding-left: 10px;
+    list-style-type: disc !important;
+}
+
+/* Padding for list */
+.page__children-container li {
+    padding: 10px;
+}
+
+/* Re-position context if neccessary */
+.context {
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: var(--font-size);
+}
+
+/* Padding for text */
+.context__Paragraph p {
+    padding: 10px 0px;
+    font-weight: normal;
+}
+
+/* Position for paragraph without <ul> */
+.context__Paragraph {
+    padding-left: 0px;
+    padding-top: 10px;
+    font-size: var(--font-size);
+}
+
+/* Position image of the context into center */
+.context img {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+}
+
+/* Position image of the context Paraggraph into center */
+.context__Paragraph img {
+    margin: 0 auto;
+    display: block;
+}
+
+/* padding each paragraph 50px from the bottom */
+.paragraph {
+    padding-bottom: 50px;
+}
+
+/* Padding second list paragraph */
+.second_context {
+    padding-left: 30px;
+}
+
+/* Padding list in second list paragraph */
+.second_context li{
+    padding: 5px 0px;
+}
+
+/* Mobile version */
+@media screen and (max-width: 1024px) {
+    /* Make header bolder */
+    .page__children-container h3{
+        font-weight: bolder;
+        text-align: left;
+        font-size: var(--title-font-size);
+    }
+
+    /* Make sub header bolder */
+    .page__children-container h5{
+        font-weight: bolder;
+        text-align: left;
+        padding: 10px 0px;
+        font-size: var(--title-font-size);
+    }
+
+    /* Title of the paragraph */
+    .paragraph_title {
+        padding-left: 10px;
+    }
+
+    /* changer style list with disc before <li> */
+    .page__children-container ul:not(.browser-default) > li {
+        padding-left: 10px;
+        list-style-type: disc !important;
+    }
+
+    /* Padding for list */
+    .page__children-container li {
+        padding: 10px;
+    }
+
+    /* Re-position context if neccessary */
+    .context {
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: var(--font-size);
+    }
+
+    /* Padding for text */
+    .context__Paragraph p {
+        padding: 10px 0px;
+
+    }
+
+    /* Position for paragraph without <ul> */
+    .context__Paragraph {
+        padding-left: 0px;
+        padding-top: 20px;
+        font-size: var(--font-size);
+    }
+
+    /* Position image of the context into center */
+    .context img {
+        margin: 0 auto;
+        width: 100%;
+        display: block;
+    }
+
+    /* Position image of the context Paraggraph into center */
+    .context__Paragraph img {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+    }
+
+    /* padding each paragraph 50px from the bottom */
+    .paragraph {
+        padding-bottom: 25px;
+    }
+
+    /* Padding second list paragraph */
+    .second_context {
+        padding-left: 10px;
+    }
+
+    /* Padding list in second list paragraph */
+    .second_context li{
+        padding: 10px 0px;
+    }
+
+    /* Resize container for mobile version */
+    .page__children-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}

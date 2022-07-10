@@ -1,0 +1,39 @@
+/* height min - 474 */
+
+:root {
+    --font-size: 18px;
+    --font-size-mobile: 15px;
+    --font-size-titre: 45px;
+    --font-size-titre-mobile: 30px;
+    --font-size-sous-titre: 45px;
+    --font-size-sous-titre-mobile: 24px;
+    --font-size-button: 25px;
+    --font-size-button-mobile: 21px;
+    --font-family: Poppins, sans-serif; 
+    --font-family-titre: Monoton, sans-serif;
+    --primary-color: #202020;
+    --secondary-color-dark: #686040;
+    --secondary-color: #B1A26B;
+    --secondary-color-light: #DAC688;
+    --secondary-color-lighter: #FFE898;
+    --third-color: #F2EEE0;
+    --online-color: #14F10F;
+}
+
+/* For class */
+
+/* style for link footer */
+.footer-link {
+    color: var(--secondary-color-dark);
+    text-decoration: none;
+}
+
+/* When mouse on it */
+.footer-link:hover {
+    font-weight: bolder;
+    color: var(--secondary-color-dark);
+}
+
+p, h1 {
+    font-family: var(--font-family);
+}

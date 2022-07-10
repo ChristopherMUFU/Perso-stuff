@@ -1,0 +1,5 @@
+.modal {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    display: flex;
+}

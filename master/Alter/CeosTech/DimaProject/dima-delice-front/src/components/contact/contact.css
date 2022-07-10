@@ -1,0 +1,106 @@
+.contact {
+  margin: 3rem;
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.contact__header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 4rem;
+  flex-direction: column;
+}
+
+.contact_title{
+  font-family: 'Joti One', cursive;
+  font-size: 4rem;  
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact__text {
+  font-size: 2rem;
+  color:black;
+  text-align: center;
+  max-width: 800px;
+}
+
+.contact__text span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+  .contact_title {
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 860px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-details {
+    order: 1;
+    border-top: 1px solid rgb(224, 221, 221);
+    margin: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .contact__form {
+    order: 0;
+  }
+
+  .contact__form {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .contact__header {
+    text-align: center;
+    /* max-width: 40%; */
+  }
+
+  .contact__heading {
+    font-size: 2rem;
+  }
+
+  .contact__heading::before {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    background: #3bb9e0;
+  }
+}
+
+.contact .MuiCardContent-root,
+.contact .MuiTypography-root {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 750px) {
+    
+  .contact__text{
+    font-size: 1.5rem !important;
+  }
+  .contact_title{
+    font-size: 2.5rem;
+  }
+}

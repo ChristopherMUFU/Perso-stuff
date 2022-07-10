@@ -1,0 +1,46 @@
+/* Grid display */
+#actualitesList-page {
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+
+.Paginate {
+    margin-top: 100px;
+}
+
+ul.pagination li {
+    box-shadow: 0px 0px 0px gray;
+  }
+  
+  ul.pagination li a {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    width: 50px;
+    height: 45px;
+    margin: 0.5px;
+    border-radius: 60px;
+    border: 1px solid gray;
+  }
+  .pagination li.active {
+      background-color: rgba(250, 246, 246, 0);
+  }
+ 
+
+
+@media screen and (max-width: 1200px) {
+    #actualitesList-page {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #actualitesList-page {
+        grid-template-columns: 1fr;
+    }
+}

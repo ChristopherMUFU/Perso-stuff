@@ -1,0 +1,176 @@
+#reserver {
+        height: 100vh;
+        margin-top: -143px;
+        padding-top: 35vh;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 7;
+        width: 100%;
+        background: url("../../../../images/Fond_Reserver_Accueil.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.Div_Reserver_Accueil{
+        height: 50vh;
+        width: 60%;
+        background-color: rgba(36, 60, 70, 0.9);
+        margin: 0 auto;
+        
+}
+
+#Titre_Reserver_Accueil{
+
+        color: #FFE897;
+        font-family: Monoton;
+        text-align: center;
+        margin-top: 1.2em;
+        font-size: var(--font-size-titre);
+        margin-bottom: 1em;
+        
+}
+
+#date{
+        
+        color: white;
+        text-align: center;
+               
+
+
+
+        
+}
+
+#date-label{
+        
+        color: white;
+        margin-left: 0.5em;
+        
+        
+        
+}
+
+#demo-simple-select-outlined-label{
+
+        color: white;
+        margin-top: 0.5em; 
+          
+}
+
+#demo-simple-select-outlined{
+
+        color: white;
+        
+}
+
+
+    
+
+
+/* style heure */
+#reserver #demo-customized-select-native {
+        background-color: transparent;
+        color: white;
+        border: solid 2px white;
+        height: 1.75em;
+        text-align: center;
+}
+
+/* style icon heure */
+#reserver .MuiNativeSelect-icon {
+        color: white;
+}
+
+/* style option time */
+#reserver option {
+        color: white;
+        background-color: #243C46;
+}
+
+#reserver #demo-customized-select-native:focus {
+        box-shadow: none;
+}
+
+/* style for reserver form */
+.reserver-form{
+        padding: 1em;
+        width: 100%;
+        
+        
+        text-align: center;
+}
+
+/* style for form heure */
+.reserver-form .MuiFormControl-root {
+        width: 96%;
+}
+
+.Btn_Reserver_Acceuil_Reserver{
+
+        color: #DAC783;
+        Width: 96%;
+        height: 3.1em;
+        border: 2px solid #DAC783;
+        text-align: center;
+        align-items: center;
+        font-family: Poppins;
+}
+
+.Btn_Reserver_Acceuil_Reserver:hover{
+
+        background-color: #DAC783;
+}
+
+/* style width */
+@media screen and (max-width: 960px){
+
+        #Titre_Reserver_Accueil{
+                font-size: var(--font-size-titre-mobile);
+        }
+
+        .Div_Reserver_Accueil{
+                height: max-content;
+                width: 80%;
+                background-color: #243C46;
+                margin: 0 auto;
+                
+        }
+        
+        #reserver {
+                margin-top: -86px;
+                padding-top: 25vh;
+                padding-bottom: 20px;
+        }
+
+        .Btn_Reserver_Acceuil_Reserver{
+                margin-bottom: 15px;
+        }
+}
+
+/* style height */
+@media screen and (max-height: 700px) {
+        #Titre_Reserver_Accueil{
+                font-size: var(--font-size-titre-mobile);
+        }
+
+        #reserver {
+                padding-top: 40vh;
+        }
+}
+
+/* style height and width */
+@media only screen and (max-height: 700px) and (max-width: 960px){
+        #reserver {
+                height: max-content;
+                padding-top: 24vh;
+        }
+}
+
+@media only screen and (max-height: 550px) and (max-width: 960px){
+        #reserver {
+                padding-top: 28vh;
+        }
+}
+
+

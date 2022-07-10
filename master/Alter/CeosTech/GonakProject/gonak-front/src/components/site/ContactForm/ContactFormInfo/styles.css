@@ -1,0 +1,32 @@
+/* style for contact info Phone & Mail */
+.contact-info {
+    background-color: var(--third-color);
+    margin-top: 130px;
+    margin-bottom: 40px;
+    padding: 50px;
+    text-align: center;
+    color: var(--secondary-color-dark);
+    width: 80%;
+}
+
+.contact-info h1 {
+    font-weight: bolder;
+    color: var(--secondary-color);
+    padding: 20px;
+}
+
+.contact-info p {
+    font-size: var(--font-size);
+}
+
+.contact-info .contact-phone {
+    background-color: white;
+    padding: 10px 40px;
+}
+
+/* Mobile version */
+@media screen and (max-width: 960px) {
+    .contact-info {
+        margin-top: 100px;
+    }
+}

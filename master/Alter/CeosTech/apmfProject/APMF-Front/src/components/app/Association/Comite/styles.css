@@ -1,0 +1,16 @@
+/* Style title member */
+.Comite-member-partie h5{
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style title copresident */
+.Comite-copresident-partie h5{
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Change style paragraph in Comite */
+.Comite-text-partie .paragraph p {
+    text-align: justify;
+}

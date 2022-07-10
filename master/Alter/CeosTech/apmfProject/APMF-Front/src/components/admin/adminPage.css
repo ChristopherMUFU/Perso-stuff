@@ -1,0 +1,114 @@
+:root {
+  /* --font-size: 18px;
+    --font-size-mobile: 12px;
+    --title-font-size: 46px;
+    --title-font-size-mobile: 20px;
+    --subtitle-font-size: 24px;
+    --font-weight: 400;
+    --title-font-weight: 700; */
+  --primary-color: #3cb7e7;
+  /* --primary-color-light: #C893C7;
+    --primary-color-medium: #8E5A76;
+    --secondary-color: #06ADEF;
+    --secondary-color-light: #83D6F7;
+    --secondary-color-navbar: #43C7F4;
+    --secondary-color-variation: rgba(167, 209, 226, 0.75);
+    --shadow-color: #C5C5C5;
+    --opacity: 0.6; */
+}
+
+.adminPage {
+  position: relative;
+}
+
+.adminPage__container {
+  display: flex;
+}
+
+.admin__container {
+  width: 90%;
+  margin: 2rem auto 2rem;
+}
+
+@media (max-width: 1250px) {
+  .admin__container {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .admin__container {
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 676px) {
+  .admin__container {
+    padding-top: 2rem;
+  }
+}
+
+/* Changing Material Ui styles */
+/* Input */
+#dashboard-outlined-basic {
+  padding: 0 0.8rem !important;
+  /* height: 7.5rem !important; */
+  border-bottom: var(--primary-color) !important;
+  box-shadow: var(--primary-color) !important;
+  padding-bottom: 0;
+}
+/* Input line when focus */
+#dashboard-outlined-basic:focus {
+  border-bottom: var(--primary-color) !important;
+  box-shadow: var(--primary-color) !important;
+  padding: 0 0.8rem !important;
+  padding-bottom: 0;
+}
+/* Input border color when focus */
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--primary-color) !important;
+}
+/* Radio button filling */
+/* .MuiRadio-colorSecondary.Mui-checked {
+  color: var(--primary-color);
+} */
+/* Input label when focus*/
+/* .MuiFormLabel-root.Mui-focused {
+  color: var(--primary-color) !important;
+} */
+/* Checkbox filling when focused */
+/* .MuiCheckbox-colorPrimary.Mui-checked {
+  color: var(--primary-color) !important;
+} */
+
+/* Don/Adhesion pagination */
+ul.pagination li {
+  box-shadow: 0px 20px 20px gray;
+}
+
+ul.pagination li a {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  width: 50px;
+  height: 45px;
+  margin: 0.5px;
+  border: 1px solid gray;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black;
+}

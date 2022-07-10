@@ -1,0 +1,125 @@
+.panier__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.radio__panier-choice {
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 1rem 0 !important;
+  color: white;
+  background-color: #B1A26B;
+  padding: 10px 30px;
+  width: 280px;
+  margin-bottom: 8% !important;
+  text-align: center;
+
+}
+/*.panier__choice-delivery{
+  display: flex;
+  flex-direction: row;
+/*}**/
+.radio__panier-choice:hover {
+  background-color: var(--secondary-color-light);
+}
+
+.radio__panier-choice .MuiTypography-body1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.radio__panier-choice span {
+  text-align: center;
+  color: #FFFFFF;
+}
+.radio__panier-zone {
+  margin-bottom: 30px;
+}
+
+#radio_emporter{
+  margin-right: 100px !important;
+}
+
+.radio__panier-zone span {
+  margin: 0 1.2rem;
+}
+
+.radio__text-zone {
+  margin-bottom: -1px;
+}
+
+#last-panier-radio
+{
+  margin-top: -10px;
+}
+
+#last-text-radio
+{
+  margin-top: 20px;
+}
+
+.product--info-title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  align-self: flex-start !important;
+
+}
+
+
+.zones__container{
+  margin-bottom:  -20px;
+}
+
+.livraison__container {
+  text-align: center;
+  color: black !important;
+}
+.livraison__container p {
+  margin-top: -20px;
+  font-style: italic;
+  margin-bottom: 10%;
+}
+.panier__container--btn-valider {
+  margin-top: 2rem !important;
+  border-radius: 0 !important;
+  padding: 1.5rem 2.5rem !important;
+  background-color: #B1A26B !important;
+}
+.error_cart {
+  text-align: center;
+}
+.CGV__container {
+  display: flex;
+  margin-top: 3rem;
+}
+.CGV__container p {
+  margin-top: 9px;
+  margin-bottom: 0rem;
+  margin-left: 3px;
+  width: auto;
+  text-align: center;
+}
+.CGV__container p a {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+}
+.CGV__container p a:hover {
+  color: black;
+}
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: var(--secondary-color-dark) !important;
+}
+.MuiRadio-colorSecondary.Mui-checked {
+  color: var(--secondary-color-dark) !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--secondary-color-dark) !important;
+}
+@media (max-width: 535px) {
+  .CGV__container p {
+    width: 80%;
+  }
+}

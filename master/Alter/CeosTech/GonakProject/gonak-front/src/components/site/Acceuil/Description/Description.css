@@ -1,0 +1,94 @@
+#description {
+    position: relative;
+    z-index: 10;
+}
+
+.Text_DivBas_Acceuil{
+
+    line-height: 36px;
+    font-size: 25px;
+    
+}
+
+.DivBas_Acceuil{
+
+    background-color: #F3EFE0;
+    
+}
+
+
+#Text_PaulBocuse{
+
+    margin-top: 2%;
+    font-style: italic;
+    float: right;
+
+
+
+}
+
+.Grande_Div{
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.Text_DivBas_Acceuil strong{
+
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+}
+
+#Text_Principal{
+    margin-bottom: 4%;
+}
+
+
+@media screen and (max-width:1200px), (max-height: 700px) {
+
+    #Text_Principal, #Text_PaulBocuse{
+
+        font-size: 20px;
+    }
+
+    .Text_DivBas_Acceuil strong{
+
+        font-size: 25px;
+        
+    }
+
+
+}
+    
+
+
+@media screen and (max-width:960px) {
+
+    .Text_DivBas_Acceuil{
+
+        line-height: 24px;   
+        
+    }
+
+    #Text_Principal, #Text_PaulBocuse{
+
+        font-size: 15px;
+    }
+
+    .Text_DivBas_Acceuil strong{
+
+        font-size: 20px;
+        
+    }
+
+    .Grande_Div{
+        
+        width: 100%;
+        
+    }
+    
+}

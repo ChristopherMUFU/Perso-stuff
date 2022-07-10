@@ -1,0 +1,29 @@
+let test = agenda[month].planning.map((item) => {
+
+            if(moment(item.nom).diff(date,'day') == 0){
+
+                item.listEmploye.push({
+                    nom: this.state.employe.firstName + " " + this.state.employe.name,
+                    qualification: this.state.qualification,
+                    horraire: this.state.startHour + "-" + this.state.endHour,
+                    pause : this.state.pause
+                })
+                return 1
+            }
+
+
+             if(test[0] == undefined){
+            agenda[month].planning.push({
+                name:date,
+                listEmploye: [
+                    {
+                        nom: this.state.employe.firstName + " " + this.state.employe.name,
+                        qualification: this.state.qualification,
+                        horraire: this.state.startHour + "-" + this.state.endHour,
+                        pause : "45minutes"
+                    }
+                ]
+            })
+            
+        }
+        this.props.navigation.navigate('Planning')

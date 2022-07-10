@@ -1,0 +1,91 @@
+codeHTMLInaptitude: param.typeLettre == "Inaptitude" ? createInaptitude(param.civility, param.name, param.firstName, param.adress, param.postalC, param.dateEntretien, param.signature ) : null,
+      codeHTMLEconomique: param.typeLettre == "Economique" ? createEconomique(param.civility, param.name, param.date, param.nationality, param.placeBirth, param.socialNumber, param.adress, param.postalCode, param.qualification, param.statut, param.startDate, param.hourlyRate, param.task, param.coefEch, param.weeklyWork, param.signature ) : null,
+      codeHTMLPersonnel: param.typeLettre == "Personnel" ? createPersonnel(param.civility, param.name, param.date, param.nationality, param.placeBirth, param.socialNumber, param.adress, param.postalCode, param.qualification, param.statut, param.startDate, param.hourlyRate, param.task, param.coefEch, param.weeklyWork, param.signature ) : null,
+      codeHTMLConvocation: param.typeLettre == "Convocation" ? createConvocation(param.civility, param.name, param.date, param.nationality, param.placeBirth, param.socialNumber, param.adress, param.postalCode, param.qualification, param.statut, param.startDate, param.hourlyRate, param.task, param.coefEch, param.weeklyWork, param.signature ) : null,
+
+
+
+      <Dropdown
+                        label = "Modèle"
+                        labelHeight={-10}
+                        containerStyle={{borderRadius:8, borderWidth: 2, width: '30%', borderColor: 'white'}}
+                        data={this.state.modele} //récupère les données du state.model
+                        selectedItemColor={'#3BB9E0'}
+                        valueExtractor={({value})=> value}
+                        value= {this.state.type}
+                        baseColor={'white'}
+                        pickerStyle={{borderRadius:10,borderWidth: 1, width: '40%', paddingLeft:'30%'}}
+                        inputContainerStyle={{borderBottomWidth: 0}}
+                        onChangeText={(value)=>{this.setState({type: value})}}
+                        style={{color:"white", textAlign: "center"}}
+                    />
+
+
+return(
+            // MENU LICENCIEMENT            
+			<View style={Theme.styles.container}>
+				<Text style={Theme.styles.title}>Licencier<Text style={{color:'#6ed6ff'}}>.</Text></Text>
+				<Image source={require('../../assets/img/logo-resto.png')} style={[Theme.styles.logo, {position:"relative", top: "5%" }]}/>
+			</View>	
+                <View style={Theme.styles.container}>
+                    <View style = {{
+                        flex: 1,
+                        alignItems: 'center',
+                        ...(Platform.OS !== 'android' && {
+                            zIndex: 10
+                            })
+                        }
+                        }
+                    >
+                        <DropDownPicker
+                            placeholder= "Type de lettre"
+                            items={this.state.modele}
+                            style = {{backgroundColor: 'transparent'}}
+                            containerStyle= {
+                                {
+                                    height:40,
+                                    width:100,
+                                    
+                                }
+                            }
+                            dropDownStyle = {{backgroundColor: 'grey'}}
+                            placeholderStyle={{color: 'white', fontSize: 16}}
+                            labelStyle = {{color:'white', fontSize: 16}}
+                            arrowColor = {'white'}
+                            onChangeItem={ (item) => this.setState({type: item.value})}
+
+                        />
+                    </View>
+                </View>
+                
+
+                <View style={Theme.styles.container}>
+                    <DropDownPicker
+                        placeholder= "Nom du salarié"
+                        items={this.listeNom}
+                        style = {{backgroundColor: 'white'}}
+                        containerStyle= {
+                            {   
+                                marginTop : 23,
+                                height:60,
+                                width:'88%',
+                            }
+                        }
+                        dropDownStyle = {{backgroundColor: 'white'}}
+                        placeholderStyle={{color: 'black', fontSize: 16}}
+                        labelStyle = {{color:'black', fontSize: 16 }}
+                        arrowColor = {'black'}
+                        onChangeItem={ (item) => this._findPerson(item.value)}
+                    />
+                </View>
+
+                               
+                {this._dateChoiceLetter()}
+               
+                {this._displayMotif()}
+               				
+				<TouchableOpacity onPress = {() => { this._goTo()}} style={{width:'80%', marginBottom: 10}}>
+					<View style = {Theme.buttons.choices}>
+						<Text style = {Theme.buttons.titlechoice}>Valider</Text>
+					</View>
+				</TouchableOpacity>

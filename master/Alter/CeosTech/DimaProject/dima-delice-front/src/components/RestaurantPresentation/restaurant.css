@@ -1,0 +1,159 @@
+.restaurant {
+  margin: 3rem;
+}
+
+.restaurant__title {
+  font-family: "Joti One", cursive;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.restaurant__text {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.restaurant__text span {
+  font-weight: bold;
+}
+
+.restaurant__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.restaurant__informations-container {
+  width: 50%;
+  margin-right: 5rem;
+}
+
+.restaurant__information {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.restaurant__information-details h3 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.restaurant__information-details h4 {
+  margin-bottom: 1.5rem;
+}
+
+.restaurant__position h3 {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.restaurant__position p {
+  font-size: 1.5rem;
+}
+
+.restaurant__information-details h4 {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+.restaurant__information-details p {
+  font-size: 1.5rem;
+  line-height: 30px;
+}
+
+.restaurant__bold {
+  font-weight: bold;
+}
+
+.restaurant__informations-logo {
+  margin-right: 2rem;
+  align-self: flex-start;
+  margin-top: 0.6rem;
+}
+
+.restaurant__information button {
+  background: #040405;
+  border: 1px solid #f7d452;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 1.3rem;
+  margin-left: 1rem;
+}
+
+.restaurant__ligne {
+  width: 2px;
+  padding: 1rem 0;
+  background-color: #ffe000;
+  margin: 5rem 0;
+}
+
+.restaurant__ligne2 {
+  display: none;
+}
+
+.restaurant__position {
+  width: 50%;
+  margin-left: 6rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .restaurant__container {
+    flex-direction: column-reverse;
+  }
+  .restaurant__ligne {
+    display: none;
+  }
+  .restaurant__position {
+    margin-left: 0px;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .restaurant__informations-container {
+    width: 100%;
+  }
+  .restaurant__ligne2 {
+    display: block;
+    margin: 4rem 0;
+    height: 2px;
+    background-color: #ffe000;
+  }
+
+  .restaurant__title {
+    font-size: 3rem;
+  }
+
+  .restaurant__text {
+    font-size: 1.5rem !important;
+  }
+
+  .restaurant__informations-details h3 .restaurant__position h3 {
+    font-size: 2rem;
+  }
+
+  .restaurant__informations-details h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .restaurant__informations-details p {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .restaurant__information {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurant__informations-logo {
+    margin-bottom: 1rem;
+  }
+}

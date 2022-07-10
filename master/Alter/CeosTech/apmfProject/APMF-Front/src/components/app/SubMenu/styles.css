@@ -1,0 +1,26 @@
+.submenu__container {
+    background-color: var(--secondary-color-variation);
+    font-size: 18px;
+    padding: 4em 2em;   
+    height: 100%;   
+}
+
+.submenu__container li {
+    margin-bottom: 1em;
+    cursor: pointer;
+    width: max-content;
+    padding: 0.2em 0.5em;
+}
+
+.subMenu-active {
+    background-color: var(--primary-color);
+    border-radius: 25px;
+
+}
+
+/* responsive: the menu on the left only displayed on big sreens. The value matches 'lg' screen from Material UI => breakpoint chosen for the navbar */
+@media screen and (max-width: 1280px) {
+    .submenu__container {
+        display: none;
+    }
+}

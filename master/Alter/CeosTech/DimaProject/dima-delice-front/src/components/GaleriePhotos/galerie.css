@@ -1,0 +1,41 @@
+
+.galeriePhotos {
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+.galerie_title {
+    font-family: "Roboto", sans-serif;
+    
+}
+span {
+    font-family: "Roboto", sans-serif;
+    
+
+}
+.photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type : none;
+    justify-content: space-around;
+
+}
+
+.photo {
+
+    max-width: 24em;
+    min-width: 24em;
+    margin: 25px;
+    border: .15em solid red;
+    border-bottom: 3em solid red;
+
+}
+
+
+.more__photos {
+    text-align: center;
+    font-family: 'Joti One', cursive;
+    padding-bottom: 1em;
+    cursor: pointer;
+}

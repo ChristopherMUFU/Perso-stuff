@@ -1,0 +1,50 @@
+/* Style for contact Form coordonnee */
+.contact-coord {
+    background-color: var(--third-color);
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 10%;
+    width: 80%;
+    color: var(--secondary-color-dark);
+}
+
+.contact-coord h2 {
+    color: var(--secondary-color);
+}
+
+.contact-coord .MuiFilledInput-root {
+    background-color: white;
+}
+
+.contact-coord .MuiFilledInput-underline::before {
+    border-bottom: 0px solid white;
+}
+
+.contact-coord .MuiFormLabel-root {
+    color: var(--secondary-color-dark);
+}
+
+/* Style for Button Envoyer */
+.btnEnvoyer {
+    padding: 5px 20px;
+    margin-top: 20px;
+    background-color: var(--third-color);
+    color: var(--secondary-color-dark);
+    border: solid 1px var(--secondary-color-dark);
+    font-size: var(--font-size-button);
+}
+
+/* When the mouse into the Button Envoyer */
+.btnEnvoyer:hover {
+    background-color: var(--secondary-color-dark);
+    color: var(--third-color);
+    border: solid 1px var(--third-color);
+}
+
+/* Mobile version */
+@media screen and (max-width: 960px) {
+    /* Style for Button Envoyer */
+    .btnEnvoyer {
+        font-size: var(--font-size-button-mobile);
+    }
+}

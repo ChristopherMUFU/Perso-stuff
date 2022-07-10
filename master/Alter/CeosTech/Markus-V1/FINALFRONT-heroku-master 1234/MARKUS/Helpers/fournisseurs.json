@@ -1,0 +1,40 @@
+[
+   {
+      "id" : 0,
+      "name" : "Metro",
+      "contact": {
+         "name" : "Alper-Hugo de Saint-Simon",
+         "mail": "metro@gmail.com",
+         "phone" : "0145856965",
+         "fax": "0145856962"
+      },
+      "coord" : {
+         "adress" : "85 Rue Chinon",
+         "bp": 94600,
+         "city": "Choisy"
+      },
+      "delivery" : {
+         "day": 6,
+         "delay": 4
+      }
+   },
+   {
+      "id" : 1,
+      "name" : "Pomona",
+      "contact": {
+         "name" : "Jean-Eude La Galère",
+         "mail": "pomona@gmail.com",
+         "phone" : "0145856945",
+         "fax": "0145856902"
+      },
+      "coord" : {
+         "adress" : "85 Rue Mère Thèrese",
+         "bp": 92569,
+         "city": "Meudon"
+      },
+      "delivery" : {
+         "day": 7,
+         "delay": 2
+      }
+   }
+]

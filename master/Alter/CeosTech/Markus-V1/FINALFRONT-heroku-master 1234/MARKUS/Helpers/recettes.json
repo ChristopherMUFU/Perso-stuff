@@ -1,0 +1,33 @@
+[
+    {
+       "idRecette" : 0,
+       "name" : "Salade de fruits",
+       "ingredients" : [{"nom" :"Pommes", "poids": "10g", "fournisseur": "Leclerc"}, {"nom":"Kiwis", "poids": "10g", "fournisseur": "Auchan"}, {"nom":"Fraises", "poids": "10g", "fournisseur": "BioCBon"}],
+       "steps" : ["Préparer sirop avec du sucre et de l'eau", "Couper les fruits en quatre et laisser refroidir le sirop"],
+       "rechauffage" : "Servir frais",
+       "category" : "Dessert",
+       "cout_matiere": 1.45,
+       "prix_de_vente": 4.99
+    },
+    {
+      "idRecette" : 1,
+      "name" : "Tartare de boeuf",
+      "ingredients" : [{"nom" :"Boeuf", "poids": "100g", "fournisseur": "Leclerc"}, {"nom":"Oignon", "poids": "10g", "fournisseur": "Picard"}, {"nom":"Frites", "poids": "100g", "fournisseur": "GrandFrais"}],
+      "steps" : ["Hâcher le boeuf", "Cuire les frites"],
+      "rechauffage" : "Servir chaud",
+      "category" : "Plat",
+      "cout_matiere": 3.45,
+      "prix_de_vente": 14.99
+   },
+   {
+      "idRecette" : 2,
+      "name" : "Gaspacho",
+      "ingredients" : [{"nom" :"Tomates", "poids": "10g", "fournisseur": "Leclerc"}, {"nom":"Concombre", "poids": "10g", "fournisseur": "BioCBon" }, {"nom":"Menthe", "poids": "10g", "fournisseur": "MonJardin"}],
+      "steps" : ["Couper les légumes", "Mixer le tout"],
+      "rechauffage" : "Servir frais",
+      "category" : "Entrée",
+      "cout_matiere": 2.45,
+      "prix_de_vente": 7.99
+   }
+  
+ ]

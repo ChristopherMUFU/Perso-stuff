@@ -1,0 +1,16 @@
+/* Style text for download */
+.text__Download{
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+    /* Style text for download */
+    .text__Download{
+        color: var(--secondary-color);
+        font-style: italic;
+        font-size: 12px;
+    }
+}
+

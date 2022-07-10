@@ -1,0 +1,279 @@
+.restaurent {
+  padding: 6rem;
+  background-color: #3d3d3d;
+  border-bottom: 3px solid white;
+}
+
+.restaurent_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.restaurent__introduction {
+  max-width: 1000px;
+}
+
+.restaurent_title {
+  font-family: "Roboto", cursive;
+  background-image: url("../../images/Rectangle\ 934.png");
+  background-repeat: no-repeat;
+  padding: 3.5rem 0rem;
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  margin: auto;
+  border-radius: 5px;
+  background-position: center;
+  color: #3d3d3d;
+  margin-bottom: -1em;
+  text-shadow: white 1.5px 1.5px, white -1.5px 1.5px, white -1.5px -1.5px,
+    white 1.5px -1.5px;
+  margin-bottom: 30px;
+}
+.logo__restaurent-page {
+  width: 188px;
+  height: 167px;
+  position: absolute;
+  left: 80px;
+}
+
+.restaurent_logo {
+  align-items: center;
+  position: relative;
+  width: 255px;
+  cursor: pointer;
+}
+
+.restaurent__bitmoji {
+  margin-top: -23em;
+  margin-left: 5em;
+  position: absolute;
+}
+
+.restaurent__bitmoji2 {
+  margin-top: -23em;
+  margin-left: 41em;
+  position: absolute;
+}
+.restaurent__bitmoji3 {
+  margin-top: -23em;
+  margin-left: 78em;
+  position: absolute;
+}
+
+.restaurent_text {
+  /* color: #90d9f1 !important; */
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.restaurent_text span {
+  font-weight: bold;
+}
+
+.restaurent__description {
+  /* color: #90d9f1 !important; */
+  font-size: 1.5rem !important;
+  color: white;
+}
+.restaurent__description span {
+  display: none;
+}
+
+.restaurent_figure {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 8em;
+  margin-top: 5em;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.restaurent__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  color: white;
+}
+.restaurent__container span {
+  color: #3d3d3d;
+  font-size: 2rem;
+}
+.restaurant__informations-logophone {
+  padding-right: 15px;
+}
+
+.restaurent__link-container {
+  display: flex;
+  align-items: center;
+}
+
+h3 a {
+  color: white;
+}
+
+.restaurent__container h2 {
+  font-family: "Roboto", cursive;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  border-bottom: 4px solid #87b37a;
+}
+.restaurent__container p {
+  font-size: 1.5rem;
+}
+
+.restaurent__container h3 {
+  font-size: 1.5rem;
+  width: 250px;
+  text-align: center;
+  text-decoration: none !important;
+  color: #3d3d3d;
+  padding: 0.5rem 0rem;
+  border: 1px solid white;
+  background-image: url("../../images/bois_clair_carré.png");
+  border-radius: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  background-position: center;
+}
+
+.restaurent__button {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 1610px) {
+  .logo__restaurent-page {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .logo__restaurent-page {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .restaurent__introduction {
+    max-width: 600px;
+  }
+
+  .restaurent__header {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .logo__restaurent-page {
+    left: 80px;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .logo__restaurent-page {
+    left: 40px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .logo__restaurent-page {
+    left: 0px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .restaurent__introduction {
+    max-width: 300px;
+  }
+  .logo__restaurent-page {
+    left: 60px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .logo__restaurent-page {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .restaurent {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo__restaurent-page {
+    display: none;
+    position: relative;
+  }
+
+  .restaurent_title {
+    font-size: 3rem;
+  }
+
+  .restaurent__container h2 {
+    font-size: 2rem;
+  }
+
+  .restaurent_text {
+    font-size: 1.5rem !important;
+  }
+
+  .restaurent__introduction {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .restaurent__logo {
+    align-items: center;
+    position: relative;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .restaurent__logo {
+    width: 200px;
+  }
+  .restaurent_title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .team {
+    padding: 4em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .team {
+    padding: 3em;
+    margin-top: 5em;
+  }
+}
+@media screen and (max-width: 350px) {
+  .team {
+    padding: 1em;
+    margin-top: 5em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .restaurent_figure {
+    margin: -1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .restaurent_figure {
+    margin: -4em;
+  }
+}

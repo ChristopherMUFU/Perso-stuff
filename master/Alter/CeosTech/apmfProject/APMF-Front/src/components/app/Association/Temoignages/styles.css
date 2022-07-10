@@ -1,0 +1,69 @@
+/* Style for temoignage text part */
+.Temoignages-text {
+    border: black 3px solid;
+    border-radius: 10px;
+    padding: 30px;   
+    box-shadow: 2px 2px 2px 2px var(--shadow-color); 
+}
+
+.Temoignages-text p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.Temoignages-text .Temoignages-author{
+    font-weight: bolder;
+    text-align: end;
+}
+
+/* Style for icon in the bottom of the box */
+.icon-gauche, .icon-droite {
+    margin-top: -2px;
+}
+.icon-gauche {
+    text-align: start;
+    padding-left: 8%;
+}
+.icon-droite {
+    text-align: end;
+    padding-right: 8%;
+}
+
+/* style for title */
+#Temoignages-page h5 {
+    padding-left: 25px;
+}
+
+/* youtube link style */
+.Temoignage-video-Youtube {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height:0;
+    overflow:hidden;
+}
+   
+.Temoignage-video-Youtube iframe, .Temoignage-video-Youtube object, .Temoignage-video-Youtube embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+/* Mobile version */
+@media screen and (max-width: 750px) {
+    /* Style for temoignage text part in Mobile version */
+    .Temoignages-text {
+        padding: 10px;    
+    }
+    .Temoignages-text p{
+        padding: 5px;
+        font-size: var(--font-size);
+    }
+
+    /* style for title in Mobile version */
+    #Temoignages-page h5 {
+        font-size: var(--subtitle-font-size);
+    }
+}

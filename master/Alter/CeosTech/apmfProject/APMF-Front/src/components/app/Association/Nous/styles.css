@@ -1,0 +1,14 @@
+#nous-page h1 {
+    font-weight: bold;
+    font-size: var(--title-font-size);
+    line-height: 56px;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.page-card__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

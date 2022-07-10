@@ -1,0 +1,56 @@
+[
+   {
+      "id" : 1,
+      "fournisseur" : {"id" : 1, "name" : "Pomona"},
+      "name" : "Bière",
+      "ref": "CDFR2444",
+      "price" : 5,
+      "lot" : 12,
+      "unite": "bouteilles"
+   },
+   {
+      "id" : 0,
+      "fournisseur" : {"id" : 1, "name" : "Pomona"},
+      "name" : "Saucisson",
+      "ref": "CBFR2444",
+      "price" : 15,
+      "lot" : 5,
+      "unite": "pièce"
+   },
+   {
+      "id" : 2,
+      "fournisseur" : {"id" : 1, "name" : "Pomona"},
+      "name" : "Entrecôtes",
+      "ref": "CDFR2484",
+      "price" : 50,
+      "lot" : "5",
+      "unite": "kg"
+   },
+   {
+      "id" : 3,
+      "fournisseur" : {"id" : 1, "name" : "Pomona"},
+      "name" : "Riz",
+      "ref": "CDAA2444",
+      "price" : 25,
+      "lot" : 10,
+      "unite": "kg"
+   },
+   {
+      "id" : 4,
+      "fournisseur" : {"id" : 0, "name" : "Metro"},
+      "name" : "Coca",
+      "ref": "CDFR5044",
+      "price" : 5,
+      "lot" : 12,
+      "unite": "bouteilles"
+   },
+   {
+      "id" : 5,
+      "fournisseur" : {"id" : 0, "name" : "Metro"},
+      "name" : "Saint-Nectaire",
+      "ref": "AAFR2444",
+      "price" : 5,
+      "lot" : "",
+      "unite": "pièce"
+   }
+]

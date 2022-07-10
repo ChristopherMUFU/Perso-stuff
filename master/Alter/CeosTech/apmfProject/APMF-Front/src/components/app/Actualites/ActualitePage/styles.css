@@ -1,0 +1,82 @@
+.actualite-page__container {
+  margin: 2rem 0;
+  min-height: 68vh;
+}
+
+.actualite-details__container {
+  margin: 3rem auto;
+  width: 80%;
+}
+
+.go-back-link__actualites {
+  font-size: var(--subtitle-font-size);
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem;
+  margin-left: 2rem;
+  position: relative;
+  border: none;
+  background-color: #fff;
+}
+
+.go-back-link__actualites::before {
+  color: var(--primary-color);
+  border-style: solid;
+  border-width: 0 0 2px 2px;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  width: 8px;
+  margin-top: -3px;
+  top: 50%;
+  transition: left 0.1s;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.actualite__Page-content {
+  margin-bottom: 5rem;
+}
+
+/* style for image */
+.actualite__Page-content img {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+}
+
+/* style for download partie */
+.actualite-Download {
+  text-align: center;
+  margin: 1.5rem auto 0;
+  width: max-content;
+}
+
+/* style cho actualite download */
+.actualite-text-Download {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style and position of the Actualite Page */
+
+.actualite__Page-footer p {
+  text-align: left;
+}
+
+/* Style image réseaux socials = Facebook, Twitter, Youtube */
+.image-reseaux img {
+  display: inline;
+  width: 40px;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+.center-actualite__Page {
+  text-align: center;
+  padding-bottom: 20px;
+}

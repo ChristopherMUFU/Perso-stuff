@@ -1,0 +1,27 @@
+#missions-card__container {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    margin: 1em 10px;
+    border: 1px solid black;
+    padding: 1em;
+    line-height: 21px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-width: 300px;
+}
+
+#missions-card__container h2 {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-size: var(--font-size);
+    line-height: 21px;
+    margin: 1em 0;
+}
+
+#missions-card__container p {
+    font-size: var(--font-size);
+    text-align: left;
+    margin: 1em 0;
+}

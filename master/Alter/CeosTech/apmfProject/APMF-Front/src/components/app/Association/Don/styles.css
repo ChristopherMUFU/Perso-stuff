@@ -1,0 +1,83 @@
+.steps-form-donation {    
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.buttons-don-page {
+    margin-top: 2rem;
+}
+
+.btnSteps {    
+    background: var(--primary-color);
+    color: white;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size);
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;
+}
+
+.btnSteps:focus {
+    background-color: var(--primary-color) !important;
+}
+
+.don-complementary-infos {
+    margin-top: 5rem;
+    font-style: italic;
+    font-weight: 500;
+    font-size: var(--subtitle-font-size);
+}
+
+.don-complementary-infos h2 {
+    font-size: var(--subtitle-font-size);
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+.don-complementary-infos p {
+    font-size: var(--subtitle-font-size);
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
+
+/* Changing Material Ui styles */
+
+/* Input */
+.steps-form-donation #outlined-basic {
+    padding: 0.5em!important;
+    height: 1.5rem !important;
+    border-bottom: var(--primary-color) !important;
+    box-shadow: var(--primary-color) !important;
+}
+
+/* Input line when focus */
+.steps-form-donation #outlined-basic:focus {
+    border-bottom: var(--primary-color) !important;
+    box-shadow: var(--primary-color) !important;
+}
+
+/* Input border color when focus */
+.steps-form-donation .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--primary-color) !important;
+}
+
+/* Radio button filling */
+.steps-form-donation .MuiRadio-colorSecondary.Mui-checked {
+    color: var(--primary-color)
+}
+
+/* Input label when focus*/
+.steps-form-donation .MuiFormLabel-root.Mui-focused {
+    color: var(--primary-color) !important;
+}
+
+/* Checkbox filling when focused */
+.steps-form-donation .MuiCheckbox-colorPrimary.Mui-checked {
+    color: var(--primary-color) !important;
+}
+

@@ -1,0 +1,60 @@
+#orgas-card__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    margin: 1em 10px;
+    border-top: 0px;
+    padding: 1em;
+    line-height: 21px;
+    min-width: 300px;
+}
+.head {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+#orgas-card__container h5 {
+    margin-left: 50px;
+}
+
+
+#orgas-card__container h2 {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    font-size: var(--font-size);
+    line-height: 21px;
+    margin: 1em 0;
+}
+
+#orgas-card__container p {
+    font-size: var(--font-size);
+    text-align: left;
+    margin: 1em 0;
+}
+
+@media(max-width: 1400px) {
+
+    #orgas-card__container {   
+        width: 100%;
+        height: auto;
+        padding: 0;
+
+    }
+   
+    
+}
+
+@media(max-width: 800px) {
+    
+    .head {
+        flex-direction: column;
+    }
+    .head img {
+        max-width: 50%;
+    }
+
+    
+}

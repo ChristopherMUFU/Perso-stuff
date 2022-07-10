@@ -1,0 +1,141 @@
+/* logo to the center on mobile & ipad version */
+.logo__APMF{
+    margin: 0 auto;
+    height: 70px;
+}
+
+
+/* Pptision of the navbar 10px to the left and right */
+.nav-wrapper {
+    margin: 0 10px;
+}
+#menu-list-grow {
+    margin-top: 11px;
+    background: transparent;
+    min-width: 210px;
+    padding: 0;
+}
+
+/* For sub menu color */
+.navlink--submenu {
+    color: rgb(247, 244, 244) !important;
+    display: block;
+    font-size: 14px;
+    margin-top: 1px;
+    padding: 1em;
+    text-align: left;
+    background-color: #90268E;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    text-transform: none !important;
+}
+
+.navlink--submenu:hover {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* For sub menu color */
+.navlink--submenu:hover {
+    color: #90268E !important;
+}
+
+/* style of button Nous Soutenir */
+.btnSou {
+    border-radius: 60px!important;
+    background-color: var(--secondary-color-navbar);
+    color: white;
+    border: solid 0px;
+    padding: 15px 40px;
+    display: inline;
+}
+
+/* Position to center */
+.centerNav {
+    padding-right: 14%;
+}
+
+/* Position to the right */
+.rightBTN {
+    padding-right: 2%;
+}
+
+/* increase height of navbar */
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 100px;
+    line-height: 100px;
+}
+
+/* Color and size of text header */
+.text__header {
+    color: var(--primary-color);
+    text-transform: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 1rem;
+}
+
+.text__header_mobile {
+    color: var(--primary-color);
+    text-transform: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: -1.5rem;
+}
+
+.itemColor {
+    background-color: var(--primary-color);
+    border-radius: 60px;
+}
+
+.text__header_white {
+    color: white;
+    background-color: var(--primary-color);
+    text-transform: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 1rem;
+}
+
+/* Style of Button Soutenir mobile version */
+.btnSou__mobile {
+    color: var(--secondary-color);
+    text-transform: none;
+    font-size: var(--font-size);
+}
+
+.hamburger-button__button {
+    width: 30px !important;
+    margin-right: 2em !important;
+}
+
+.listItem-mobile-navbar svg{
+    color: black !important;
+}
+
+.list-items-non-collapsable:hover {
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+.nav-mobile{
+    padding: 1em;
+    cursor: pointer;
+    z-index: 100;
+    margin-left: 7%;
+}
+
+.nav-mobile:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+}
+
+.nav-mobile-active {
+    background-color: var(--primary-color) !important;
+    border-radius: 25px;
+}
+@media screen and (max-width: 1560px) {
+    .text__header {
+        margin: 0rem 0.5rem;
+    }
+}

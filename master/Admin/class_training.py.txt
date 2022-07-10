@@ -1,0 +1,88 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Feb 11 17:19:42 2022
+
+@author: christopher
+"""
+
+#%% Exercice 2
+
+class Point3D :
+    def __init__(self, x=0, y=0, z=0) :
+        self.x = x
+        self.y = y
+        self.z = z
+    def __str__(self):
+        return f"({self.x}, {self.y}, {self.z})"
+    def Addition(self, other):
+        return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
+    def __add__(self, other):
+        return Point3D(self.x + other.x, self.y + other.y, self.z + other.z)
+    def __mul__(self, other):
+        rep = None
+        if(isinstance(other, (int, float))):
+            rep=Point3D(self.x*other, self.y*other, self.z*other)
+        elif(isinstance(other, Point3D)) :
+            rep = self.x*other, self.y*other, self.z*other.z
+        else:
+            print("type non pris en compte")
+        return rep
+    def __getitem__(self, index):
+        rep = None
+        #if(index == 0) : => à finir
+
+#%% Exercice 3
+
+import random
+echec_dim=8
+
+class individu:
+    def __init__(self, val=None):
+        if val == None :
+            self.val == random.sample(range(8),8)
+        else:
+            self.val = val
+            
+    def conflict(p1, p2):
+        if (p1[0] == p2[0]) or (p1[1] == p2[1]) :
+            return True
+        elif (abs(p1[0]-p2[0]) == abs(p1[1]-p2[1])):
+            return True
+        else :
+            return False
+    
+    def fitness(self):
+        self.nbconflict=0
+        for i in ... :
+            for j in ... :
+                if(individu.conflict([i,...], [j,...])):
+                    self.nbconflict=self.nbconflict+1
+        return self.nbconflict
+        
+        #p1(x) == p2(x)
+        #p1(y) == p2(y)
+        #p1(x-y) == p2(x-y) ???
+
+
+def algoloopSimple():
+    pop=create_rand_pop(25)
+    solutiontrouvee=False
+    nbriteration=0
+    while not solutiontrouvee:
+        print("iteration numéro : ", nbriteration)
+        nbriteration+=1
+        evaluation=evaluate(pop)
+        if evaluation[0].fitness()==0:
+            solutiontrouvee=True
+        else:
+            select=selection(evaluation,10,4)
+            croise=[]
+            for i in range(0, len(select), 2):
+                croises+=croisement(select[i], select[i+1])
+                mutes=[]
+                for i in select:
+                    mutes.append(mutation(i))
+                newalea=create_rand_pop(5)
+                pop=select[:]+croises[:]+mutes[:]+newalea[:]
+    print(evaluation[0])

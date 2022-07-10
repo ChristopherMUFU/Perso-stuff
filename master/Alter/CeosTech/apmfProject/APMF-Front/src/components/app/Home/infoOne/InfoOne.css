@@ -1,0 +1,70 @@
+
+
+/* Re-position component InfoOne: 10px from all */
+.infoOne {
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+
+/* change background of the component HomeActualite into white, with no border */
+.container {
+    background-color: white;
+    border: 0 solid #dedede;
+}
+
+
+/* Only image in this component have max-width 100%, no margin, no radius */
+.container img {
+    width: 100%;
+    margin-right: 0;
+    border-radius: 0;
+}
+
+/* Size and position all image */
+.imgOne, .imgTwo, .imgThree, .imgFour {
+    width: 120%;
+}
+
+
+/* desktop version */
+@media screen and (min-width: 1200px) {
+
+    /* Position image 1, 2, 3, 4 */
+    .imgOne, .imgTwo, .imgThree, .imgFour {
+        padding: 0px;
+    }
+
+   
+
+    .imgTwo {
+        padding-top: 60px;  
+        margin-left: -55px;
+    }
+    
+    .imgThree {
+        margin-top: -70px;
+        padding-right: 25px;
+    }
+    
+    .imgFour {
+        padding-top: 20px;
+        margin-left: -55px;
+    }
+
+
+}
+
+/* Mobile version */
+@media screen and (max-width: 750px) {
+    /* Help responsive for mobile version */
+    .col {
+        flex-basis: 100%;
+    }
+
+    /* Size and position all image */
+    .imgOne, .imgTwo, .imgThree, .imgFour {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,193 @@
+#header .header-bar {
+    background-color: #F2EEE0;
+}
+
+.sous-header-bar {
+    padding: 5px 0;
+    background-color: white;
+}
+
+.sous-header-bar p{
+    line-height: 10px;
+    color: #686040;
+    margin-top: auto;
+    font-family: Poppins;
+}
+
+/* style for all text in the center of header */
+.header-text {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* style icon ON */
+.icon_ON .MuiSvgIcon-root{
+    fill: #14F10F;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+/* style icon OFF */
+.icon_OFF .MuiSvgIcon-root{
+    fill: red;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+/* style icon CALL */
+.icon_Call .MuiSvgIcon-root{
+    fill: #686040;
+    font-size: 40px;
+    padding-right: 10px;
+    
+}
+
+/* style icon Position */
+.icon_Position .MuiSvgIcon-root{
+    fill: #686040;
+    font-size: 40px;
+}
+
+/* style logo */
+.header-bar img{
+    padding: 20px 10px 20px 40px;
+    width: 220px;
+}
+
+/* position for header */
+.header-bar .header-text{
+    padding-right: 40px;
+    display: flex;
+}
+
+/* style for button text of the header */
+.btn-header-text{
+    padding-right: 15px;
+    color: #202020;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+/* style for button text when click on it */
+.btn-header-text-click{
+    padding-right: 15px;
+    color: #202020;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: bolder;
+}
+
+/* style for button Commander */
+.btn-Commander {
+    background-color: #B1A26B;
+    color: white;
+    padding: 10px;
+    font-family: Poppins;
+    width: 10em;
+    text-align: center;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+.btn-Commander:hover{
+    color: white !important;
+}
+
+/* Mobile version */
+/* Background style for header*/
+#header .header-bar-mobile {
+    background-color: #F2EEE0;
+}
+
+/* style logo mobile version */
+.header-bar-mobile img {
+    width: 50%;
+    padding: 10px 0;
+}
+
+/* Icon Menu style */
+.icon_Menu .MuiSvgIcon-root {
+    font-size: 250%;
+    fill: #686040;
+}
+
+/* style icon On mobile */
+.header-bar-mobile p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #686040;
+    margin: auto;
+}
+
+/* style icon ON */
+.icon_ON-mobile .MuiSvgIcon-root{
+    fill: #14F10F;
+    font-size: 40px;
+}
+
+/* style icon OFF */
+.icon_OFF-mobile .MuiSvgIcon-root{
+    fill: red;
+    font-size: 40px;
+}
+
+.Div_Nav_Ouvert{
+    
+    width: 4em;
+}
+
+.Div_Nav_Logo{
+    
+    width: 18em;
+}
+
+.Navbar_Mobile{
+
+    background-color: #F2EEE0;
+    display: flex;
+}
+
+
+@media only screen and (min-width: 960px){
+    .Navbar_Mobile{
+        display: none;
+    }
+}
+
+
+
+.Logo_Gonak{
+    
+    width: 180px;
+    
+}
+
+.sous-header-bar p {
+
+    text-align: center;
+}
+
+.lien_navbar{
+    margin-right: 3vw;
+    font-family: Poppins;
+}
+
+@media (max-width: 1600px){
+    .lien_navbar {
+        margin-left : 1vw;
+        margin-right : 1em;
+    }
+
+    .header-text{
+
+        margin-left: 6em;
+    }
+
+}
+
+/* sous header in mobile version */
+@media screen and (max-width: 960px) {
+    .sous-header-bar {
+        background-color: var(--third-color);
+    }
+}

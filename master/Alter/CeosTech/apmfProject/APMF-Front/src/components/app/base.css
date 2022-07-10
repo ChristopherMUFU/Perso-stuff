@@ -1,0 +1,63 @@
+:root {
+    --font-size: 1rem;
+    --title-font-size: 46px;
+    --subtitle-font-size: 1.30rem;
+    --font-weight: 400;
+    --title-font-weight: 700;
+    --primary-color: #90268E;   
+    --primary-color-light: #C893C7;
+    --primary-color-medium: #8E5A76;
+    --secondary-color: #06ADEF;
+    --secondary-color-light: #83D6F7;
+    --secondary-color-navbar: #43C7F4;
+    --secondary-color-variation: rgba(167, 209, 226, 0.75);
+    --shadow-color: #C5C5C5;
+    --opacity: 0.6;
+}
+
+@media screen  and (max-width: 1000px) {
+    :root {
+        --title-font-size: 20px;
+        --subtitle-font-size: 1.4rem;
+    }    
+}
+
+/* For setting the ellipsis on the text overflow in HomeActualite.css */
+html {
+    --lh: 1.4rem;
+    line-height: var(--lh);
+  }
+
+/* style button En savoir plus */
+.btnPlus {
+    border-radius: 0% !important;
+    background-color: var(--secondary-color);
+    color: white;
+    border: solid 0px;
+    padding: 5px 15px;
+}
+
+p, div, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+article, aside, footer, header, nav, section {
+    margin: 0;
+}
+
+button:focus {
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none;
+}
+#submenu-list li {
+    color: white;
+}
+
+
+
+
